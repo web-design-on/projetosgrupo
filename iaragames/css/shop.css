@@ -1,0 +1,19 @@
+@import url(style.css);
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/game_cards/bg_img.png);
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.cards_vertical {
+    display: flex;
+}
+
+.jogo1 {
+    background-image: url(../assets/game_cards/card1-deathbound.png);
+    display: flex;
+}
+

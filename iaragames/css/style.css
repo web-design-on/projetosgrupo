@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #15193E;
+    --cor-secundaria: #08695F;
+    --cor-destaque: #FAA836;
+    --gradiente: linear-gradient(148deg, rgba(21,25,62,1) 0%, rgba(8,105,95,1) 100%);
+
+    --fonte-titulo: "Doppio One", sans-serif;
+    --fonte-conteudo: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--cor-principal);
+    font-family: var(--fonte-conteudo);
+    color: white;
+}

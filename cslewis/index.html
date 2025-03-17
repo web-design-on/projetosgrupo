@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.S. Lewis Books</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/banner.css">
+    <link rel="stylesheet" href="style/carrossel.css">
+    <link rel="stylesheet" href="style/topicos.css">
+    <link rel="stylesheet" href="style/contato.css">
+    <link rel="stylesheet" href="style/rodape.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu container__imagem"></span>
+             </label>
+             <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu-link">CRÔNICAS DE NÁRNIA</a></li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu-link">COLEÇÕES</a></li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu-link">BIOGRAFIAS</a></li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu-link">DEVOCIONAIS</a></li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu-link">COMENTÁRIOS</a></li>
+             </ul>
+            <a href="index.html"><img src="assets/logo-cslewis.png" alt="Logo simplificado C.S. Lewis Books" class="container__imagem"></a>
+            <h1 class="container__titulo">Books</h1>
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">CATEGORIAS</li>
+            </label>
+
+            <ul class="lista-menu">
+
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu-link">CRÔNICAS DE NÁRNIA</a></li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu-link">COLEÇÕES</a></li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu-link">BIOGRAFIAS</a></li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu-link">DEVOCIONAIS</a></li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu-link">COMENTÁRIOS</a></li>
+             </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link"></a>FAVORITOS</li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link"></a>MINHA ESTANTE</li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="assets/favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem__transparente"></a>
+            <a href="#" class="container__link">
+                <img src="assets/Sacola.svg" alt="Sacola de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="assets/perfil.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre em nossa estante o que precisa para acompanhar um dos maiores autores da história!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
+
+            <div class="carrossel__container">
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/livro-1.png" alt="Livro Sobre histórias"></div>
+                        <div class="swiper-slide"><img src="assets/livro-2.png" alt="Livro O assunto do Céu"></div>
+                        <div class="swiper-slide"><img src="assets/livro-3.png" alt="Livro Cartas de um diabo a seu aprendiz"></div>
+                        <div class="swiper-slide"><img src="assets/livro-12.png" alt="Livro Cristianismo puro e simples"></div>
+                        <div class="swiper-slide"><img src="assets/livro-13.png" alt="Livro Os quatro amores"></div>
+                        <div class="swiper-slide"><img src="assets/livro-14.png" alt="Livro"></div>
+                        <div class="swiper-slide"><img src="assets/livro-15.png" alt="Livro Surpreendido pela alegria"></div>
+                        <div class="swiper-slide"><img src="assets/livro-16.png" alt="Livro Todo meu caminho diante de mim"></div>
+                        <div class="swiper-slide"><img src="assets/livro-17.png" alt="Livro A anatomia de um luto"></div>
+                        <div class="swiper-slide"><img src="assets/livro-18.png" alt="Livro George MacDonald"></div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+                <div class="card">
+                    <div class="card_descricao">
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descricao__titulo-livro">Como Orar</h2>
+                            <p class="descricao__texto">Coletânea das escritas de C.S. Lewis, com lições que iluminarão nosso diálogo íntimo com Deus.</p>
+                        </div>
+                        <img src="assets/livro-4.png" alt="Livro Como orar" class="descricao__imagem">
+                    </div>
+
+                    <div class="card__botoes">
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="assets/favoritos.svg" alt="Favoritar livro"></li>
+                            <li class="botoes__item"><img src="assets/Sacola.svg" alt="Inserir na sacola"></li>
+                        </ul>
+                        <a href="https://www.amazon.com.br/Como-orar-C-S-Lewis/dp/8571671338/ref=sr_1_1?__mk_pt_BR=ÅMÅŽÕÑ&crid=2QR3J8GISH9H0&dib=eyJ2IjoiMSJ9.TfrMHZ1Gy75FcId7uLonVf8K1q_YJyuWGFGfY0UvLuncpYlp5qxlRzLe0C0dJsOCs6NcjqJP8PUWmcaSH1vpDucCciud5BBm7H6Y1YEUxkVaAKHKxm7qEHG2oKH8kf6h80owq1wz5RAjjvnV_bymuhIz8dAn1mf_sCdNuaetkmWS6O7EvLA_Skf1gf7Q-KS7.P7oYf7zuvYb4VP7Suiuua3JdoEh56IuZ6Ycm24TxbO0&dib_tag=se&keywords=como+orar+c+s+lewis&qid=1727456779&sprefix=como+orar+c+s+lewi%2Caps%2C372&sr=8-1" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div> 
+            </div>   
+        </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
+
+            <div class="carrossel__container">
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/livro-11.png" alt="Livro O Sobrinho e o Mago"></div>
+                        <div class="swiper-slide"><img src="assets/livro-7.png" alt="Livro O Leão, a Feiticeira e o Guarda-roupa"></div>
+                        <div class="swiper-slide"><img src="assets/livro-9.png" alt="Livro Príncipe Caspian"></div>
+                        <div class="swiper-slide"><img src="assets/livro-10.png" alt="Livro O Cavalo e o Menino"></div>
+                        <div class="swiper-slide"><img src="assets/livro-5.png" alt="Livro A Cadeira de Prata"></div>
+                        <div class="swiper-slide"><img src="assets/livro-6.png" alt="Livro A Última Batalha"></div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+                <div class="card">
+                    <div class="card_descricao">
+                        <div class="descricao">
+                            <img src="assets/classificacao.svg" alt="Classificação do livro As Crônicas de Nárnia - Ilustrado">
+                            <h3 class="descricao__titulo">Livro do Mês</h3>
+                            <h2 class="descricao__titulo-livro">Crônicas de Narnia - Ilustrado</h2>
+                            <p class="descricao__texto">Guarda-roupas mágicos, cavalos falantes e, o mais impressionante, um leão muito poderoso!</p>
+                        </div>
+                        <img src="assets/livro-8.png" alt="Livro As Crônicas de Nárnia - Ilustrado" class="descricao__imagem">
+                    </div>
+
+                    <div class="card__botoes">
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="assets/favoritos.svg" alt="Favoritar livro"></li>
+                            <li class="botoes__item"><img src="assets/Sacola.svg" alt="Inserir na sacola"></li>
+                        </ul>
+                        <a href="https://www.amazon.com.br/Crônicas-Nárnia-único-capa-ilustrado/dp/6560051951/ref=sr_1_1?crid=1E1FQFATB5L6E&dib=eyJ2IjoiMSJ9.ssHPnelcSJuVRalKKOlXjUT2OJu8WrcMr07P8BM7Fn_I2fHK-AKFzv-6fldrzpBxdZQEE9echTCo-JVUXSPUhiyWO-AfKmSlh9bFvtsyZ-P1-Olcd9zVYx_QcZZm5zS_M4x1eOAyawDFbchGDSkT7wQX-vjgOk1_Q05HZT-PaKrYzk9ks1MA1mEDbICQ39n5IQ7s1vOM8FnvCQosdOk8WrIik9qOBWw48Ip3Rfp0SGhWaDdZSQLW8fws7gDtYr716SI1phc9Zrcmn2nO8DBXtmG8U48YEdkdmmKItcx141A.Eux1211uKW9dGcOzoW2b6DH4QMewmc3uJ_IN2aRA97U&dib_tag=se&keywords=narnia+ilustrado&qid=1727460224&sprefix=narnia+ilustra%2Caps%2C507&sr=8-1&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>  
+            </div>  
+        </section>
+
+        <section class="topicos">
+            <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+                <ul class="topicos__lista">
+                    <li class="topicos__item">
+                        <a href="#" class="topicos__link">Nárnia</a>
+                    </li>
+                    <li class="topicos__item">
+                        <a href="#" class="topicos__link">Cartas</a>
+                    </li>
+                    <li class="topicos__item">
+                        <a href="#" class="topicos__link">Relacionamento</a>
+                    </li>
+                    <li class="topicos__item">
+                        <a href="#" class="topicos__link">Oração</a>
+                    </li>
+                    <li class="topicos__item">
+                        <a href="#" class="topicos__link">Reflexões</a>
+                    </li>
+                    <li class="topicos__item">
+                        <a href="#" class="topicos__link">Cristianismo</a>
+                    </li>
+                    <li class="topicos__item">
+                        <a href="#" class="topicos__link">Trilogia Cósmica</a>
+                    </li>
+                    <li class="topicos__item">
+                        <a href="#" class="topicos__link">Tolkien</a>
+                    </li>
+                </ul>
+        </section>
+
+        <section class="contato">
+            <div class="contato__descricao">
+                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
+            <input type="email" class="contato__cadastro" placeholder="Cadastre seu e-mail">
+        </section>
+    </main>
+
+    <hr/>
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo C.S. Lewis</h2>
+
+        <ul class="rodape__lista">
+            <li class="rodape__lista-titulo">OUTRAS LOJAS</li>
+            <li class="rodape_lista-item">
+                <img src="assets/amazon.png" alt="Amazon">
+                <a href="https://www.amazon.com.br/s?i=stripbooks&rh=p_27%3AC.S.+Lewis&s=relevancerank&text=C.S.+Lewis&ref=dp_byline_sr_book_1"  class="rodape_lista-link">Amazon</a>
+            </li>
+            <li class="rodape_lista-item">
+                <img src="assets/harper.png" alt="HarperCollins">
+                <a href="https://harpercollins.com.br/blogs/authors/cs-lewis"  class="rodape_lista-link">HarperCollins</a>
+            </li>
+            <li class="rodape_lista-item">
+                <img src="assets/thomas.png" alt="Thomas Nelson">
+                <a href="https://thomasnelson.com.br/blogs/authors/cs-lewis"  class="rodape_lista-link">Thomas Nelson</a>
+            </li>
+        </ul>
+
+        <ul class="rodape__lista">
+            <li class="rodape__lista-titulo">LEITURA ONLINE</li>
+            <li class="rodape_lista-item">
+                <img src="assets/amazon.png" alt="Amazon Kindle">
+                <a href="https://www.amazon.com.br/s?i=stripbooks&rh=n%3A6740748011%2Cp_27%3AC.S.+Lewis%2Cp_n_feature_browse-bin%3A8561254011&s=relevancerank&dc&ds=v1%3AIjetCbl1qqTb3a8tsLHOkM9FWO4CxdEheIR3h3qL248&qid=1727465326&rnid=8561249011&text=C.S.+Lewis&ref=sr_nr_p_n_feature_browse-bin_3"  class="rodape_lista-link">Amazon Kindle</a>
+            </li>
+            <li class="rodape_lista-item">
+                <img src="assets/pilgrim.png" alt="Pilgrim">
+                <a href="https://loja.pilgrim.com.br/search?options%5Bunavailable_products%5D=last&options%5Bprefix%5D=last&options%5Bfields%5D=title%2Cvendor%2Cproduct_type%2Cvariants.title&q=c+s+lewis"  class="rodape_lista-link">Pilgrim</a>
+            </li>
+        </ul>
+
+        <ul class="rodape__lista">
+            <li class="rodape__lista-titulo">COMUNIDADE</li>
+            <li class="rodape_lista-item">
+                <img src="assets/podcast-1.png" alt="The C.S. Lewis Podcast">
+                <a href="https://open.spotify.com/show/6h1FrtA7mZRK03ffsRmNiT?si=9abddc3efa54416b"  class="rodape_lista-link">The C.S. Lewis Podcast</a>
+            </li>
+            <li class="rodape_lista-item">
+                <img src="assets/podcast-2.png" alt=" Podcast Mere C.S. Lewis">
+                <a href="https://open.spotify.com/show/6XEt4oxnjhuL1JSjZT4lF5?si=7fd3bd8e377a4cd2"  class="rodape_lista-link">Mere C.S. Lewis</a>
+            </li>
+            <li class="rodape_lista-item">
+                <img src="assets/podcast-3.png" alt="Podcast C.H. Spurgeon | Sermões">
+                <a href="https://open.spotify.com/show/2NccsGSyEV3MF9B8MLewwm?si=544e979eb112470e"  class="rodape_lista-link">C.H. Spurgeon | Sermões</a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+        });
+    </script>
+
+</body>
+</html>
