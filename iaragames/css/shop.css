@@ -5,15 +5,72 @@
     flex-direction: column;
     background-image: url(../assets/game_cards/bg_img.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
     color: black;
 }
 
-.cards_vertical {
+.shop .cards_vertical {
     display: flex;
+    padding: 20rem;
+}
+
+.shop .cards_horizontal {
+    display: flex;
+    flex-direction: column;
+}
+
+.jogo1, .jogo2, .jogo4, .jogo5, .jogo7, .jogo8 {
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.jogo3, .jogo6 {
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .jogo1 {
     background-image: url(../assets/game_cards/card1-deathbound.png);
+}
+
+.jogo2 {
+    background-image: url(../assets/game_cards/card2-diesellegacy.png);
+}
+
+.jogo3 {
+    background-image: url(../assets/game_cards/card3-mars2120.png);
+}
+
+.jogo4 {
+    background-image: url(../assets/game_cards/card4-momodora.png);
+}
+
+.jogo5 {
+    background-image: url(../assets/game_cards/card5-mulletmadjack.png);
+}
+
+.jogo6 {
+    background-image: url(../assets/game_cards/card6-dandara.png);
+}
+
+.jogo7 {
+    background-image: url(../assets/game_cards/card7-horizonchase.png);
+}
+
+.jogo8 {
+    background-image: url(../assets/game_cards/card8-blazingchrome.png);
+}
+
+.compra {
     display: flex;
 }
 
+.compra__botao {
+    background-image: url(../assets/game_cards/cart_button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 9rem;
+}
