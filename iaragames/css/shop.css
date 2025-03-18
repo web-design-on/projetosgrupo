@@ -3,13 +3,130 @@
 .shop {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/game_cards/bg_texture1.svg);
+    background-blend-mode: multiply;
 }
 
 .shop_card_vertical {
     display: flex;
+    gap: 3.2rem;
+    margin: 3.2rem 0;
 }
 
-.compra {
+.vertical {
+    width: 258.96px;
+    height: 450px;
+    border-radius: 15px;
+    border-color: white 1px;
+    color: black;
+    padding: 10px;
+}
+
+.shop_row p {
+    margin-bottom: 1rem;
+    margin: 32.2em 10rem 0 0.6rem;
+    font-size: 0.6rem;
+    width: 230px;
+}
+
+.vertical_compra {
+    display: flex;
+    font-family: var(--fonte-titulo);
+}
+
+.vertical_compra h3{
+    margin: 1rem 0 0 0.6rem;
+    font-size: 0.9rem;
+}
+
+.vertical_compra h1{
+    margin: 0 0 0 0.2rem;
+    padding: 10px 0 0 0;
+    font-size: 1.8rem;
+}
+
+.vertical_compra__botao {
+    background-image: url(../assets/game_cards/cart_button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1.2rem 0 0 0.5rem;
+    width: 60px;
+}
+
+.shop_card_horizontal {
     display: flex;
     flex-direction: column;
+    border-radius: 15px;
+    color: black;
+    width: 570.37px;
+    height: 258.96px;
+}
+
+.shop_card_horizontal p {
+    margin-bottom: 1rem;
+    margin: 10em 0 0 2rem;
+    font-size: 0.6rem;
+    width: 225px;
+}
+
+.horizontal_compra {
+    display: flex;
+    padding: 5px 0 0 0;
+    font-family: var(--fonte-titulo);
+}
+
+.horizontal_compra h3{
+    margin: 0.3rem 0 0 2rem;
+    font-size: 0.9rem;
+}
+
+.horizontal_compra h1{
+    margin: 0 0 0 0.2rem;
+    font-size: 1.8rem;
+}
+
+.horizontal_compra__botao {
+    background-image: url(../assets/game_cards/cart_button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0.6rem 0 0 0.5rem;
+    width: 90px;
+}
+
+.jogo1 {
+    background-image: url(../assets/game_cards/card1-deathbound.png);
+}
+
+.jogo2 {
+    background-image: url(../assets/game_cards/card2-diesellegacy.png);
+}
+
+.jogo3 {
+    background-image: url(../assets/game_cards/card3-mars2120.png);
+}
+
+.jogo4 {
+    background-image: url(../assets/game_cards/card4-momodora.png);
+}
+
+.jogo5 {
+    background-image: url(../assets/game_cards/card5-mulletmadjack.png);
+}
+
+.jogo6 {
+    background-image: url(../assets/game_cards/card6-dandara.png);
+}
+
+.jogo7 {
+    background-image: url(../assets/game_cards/card7-horizonchase.png);
+}
+
+.jogo8 {
+    background-image: url(../assets/game_cards/card8-blazingchrome.png);
+}
+
+.jogo1, .jogo2, .jogo3, .jogo4, .jogo5, .jogo6, .jogo7, .jogo8 {
+    background-size: contain;
+    background-repeat: no-repeat;
 }

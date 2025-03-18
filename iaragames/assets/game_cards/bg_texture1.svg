@@ -144,6 +144,10 @@
         fill: url(#Degradado_sin_nombre_4);
       }
 
+      .cls-44 {
+        opacity: .6;
+      }
+
       .cls-3 {
         stroke: #faa836;
       }
@@ -172,7 +176,7 @@
         fill: url(#Degradado_sin_nombre_5-10);
       }
     </style>
-    <radialGradient id="radial-gradient" cx="351.58" cy="237.79" fx="351.58" fy="237.79" r="414.91" gradientTransform="translate(63.44 104.99) scale(.85 .56)" gradientUnits="userSpaceOnUse">
+    <radialGradient id="radial-gradient" cx="134.56" cy="237.79" fx="134.56" fy="237.79" r="414.91" gradientTransform="translate(248.18 104.99) scale(.85 .56)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#202a66" stop-opacity=".3"/>
       <stop offset="1" stop-color="#210240" stop-opacity="0"/>
     </radialGradient>
@@ -248,7 +252,7 @@
       <path class="cls-38" d="M660.24,83.44h0c-.93,0-1.69.75-1.69,1.69v62.04c0,.93.75,1.69,1.69,1.69h0c.93,0,1.69-.75,1.69-1.69v-62.04c0-.93-.75-1.69-1.69-1.69Z"/>
       <path class="cls-37" d="M552.2,386.96h0c-.93,0-1.69.75-1.69,1.69v62.04c0,.93.75,1.69,1.69,1.69h0c.93,0,1.69-.75,1.69-1.69v-62.04c0-.93-.75-1.69-1.69-1.69Z"/>
     </g>
-    <g>
+    <g class="cls-44">
       <rect class="cls-4" x="162.79" y="350.4" width="11.99" height="11.99"/>
       <rect class="cls-5" x="40.99" y="202.46" width="11.99" height="11.99"/>
       <rect class="cls-4" x="40.99" y="225.8" width="11.99" height="11.99"/>
