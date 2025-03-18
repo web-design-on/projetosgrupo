@@ -1,28 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-/* ---------- EFEITO DE PARTÍCULAS NO FUNDO ---------- */
-body::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Textura sutil */
-    opacity: 0.1;
-    z-index: -2;
-}
 
-body::after {
-    content: "";
-    position: absolute;
-    top: -10%;
-    left: -10%;
-    width: 120%;
-    height: 120%;
-    background: radial-gradient(circle, rgba(0,255,0,0.1) 10%, transparent 60%);
-    animation: neonGlow 6s infinite alternate ease-in-out;
-    z-index: -1;
-}
 
 @keyframes neonGlow {
     from {
