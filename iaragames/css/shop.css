@@ -18,9 +18,14 @@
     width: 258.96px;
     height: 450px;
     border-radius: 15px;
-    border-color: white 1px;
     color: black;
     padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vertical:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .shop_row p {
@@ -61,6 +66,12 @@
     color: black;
     width: 570.37px;
     height: 258.96px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop_card_horizontal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .shop_card_horizontal p {
