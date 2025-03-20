@@ -22,3 +22,12 @@ body {
     font-family: var(--fonte-conteudo);
     color: white;
 }
+
+main {
+    background-image: url(../assets/game_cards/bg_texture1.svg);
+}
+
+.btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+}

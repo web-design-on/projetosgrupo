@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,95 +12,146 @@
     <link rel="stylesheet" href="css/footer.css">
     <title>Iara Games</title>
 </head>
+
 <body>
     <header></header>
 
     <main>
+        <section class="filters" id="filters">
+            <div class="filter">
+                <label for="price" class="form-label">Preço</label>
+                <select id="price" class="form-select">
+                    <option value="todos">Todos</option>
+                    <option value="baixo">Até R$30,00</option>
+                    <option value="medio">Entre R$31,00 e R$60,00</option>
+                    <option value="alto">A partir de R$61,00</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="platform" class="form-label">Plataforma</label>
+                <select id="platform" class="form-select">
+                    <option value="todas">Todas</option>
+                    <option value="console">Console</option>
+                    <option value="desktop">Desktop</option>
+                    <option value="mobile">Mobile</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="mode" class="form-label">Modo</label>
+                <select id="mode" class="form-select">
+                    <option value="todos">Todos</option>
+                    <option value="online">Online</option>
+                    <option value="offline">Offline</option>
+                </select>
+            </div>
+            <button id="filterBtn" class="btn btn-filter">Filtrar</button>
+        </section>
+
         <section class="shop">
-            
-            <!--BLOCO 1-->
-
-            <div class="shop_row">
-                <div class="shop_card_vertical">
-                    <div class="vertical jogo1">
-                        <p><strong>RPG de ação sombrio com combates <br> intensos e sistema único de fusão entre guerreiros.</strong> Você alterna entre personagens <br>em tempo real, combinando habilidades para enfrentar monstros brutais em um mundo marcado pela fé e corrupção.</p>
-                        <div class="vertical_compra">
-                            <h3>R$</h3> <h1>74,90</h1>
-                            <a class="vertical_compra__botao" href="https://store.playstation.com/pt-br/product/UP2081-PPSA21265_00-DEATHBOUND000001" target="_blank"></a>
-                        </div>
-                    </div>
-
-                    <div class="vertical jogo2">
-                        <p>Jogo de luta 2v2 com mecânicas únicas, <br> onde a estratégia e o trabalho em equipe <br>são cruciais para a vitória. <strong>Prepare-se para combates intensos e cheios de ação em <br> um mundo dieselpunk!</strong></p>
-                        <div class="vertical_compra">
-                            <h3>R$</h3> <h1>149,50</h1>
-                            <a class="vertical_compra__botao" href="https://store.playstation.com/pt-br/product/UP2080-PPSA17152_00-DIESELLEGACY0000" target="_blank"></a>
-                        </div>
-                    </div>
+            <div class="vertical jogo jogo1" data-mode="offline" data-platform="desktop" data-price="alto">
+                <p><strong>RPG de ação sombrio com combates <br> intensos e sistema único de fusão entre
+                        guerreiros.</strong> Você alterna entre personagens <br>em tempo real, combinando
+                    habilidades para enfrentar monstros brutais em um mundo marcado pela fé e corrupção.</p>
+                <div class="vertical_compra">
+                    <h3>R$</h3>
+                    <h1>74,90</h1>
+                    <a class="vertical_compra__botao"
+                        href="https://store.playstation.com/pt-br/product/UP2081-PPSA21265_00-DEATHBOUND000001"
+                        target="_blank"></a>
                 </div>
             </div>
 
-            <!--BLOCO 2-->
+            <div class="vertical jogo jogo2" data-mode="online offline" data-platform="desktop" data-price="alto">
+                <p>Jogo de luta 2v2 com mecânicas únicas, <br> onde a estratégia e o trabalho em equipe <br>são
+                    cruciais para a vitória. <strong>Prepare-se para combates intensos e cheios de ação em <br>
+                        um mundo dieselpunk!</strong></p>
+                <div class="vertical_compra">
+                    <h3>R$</h3>
+                    <h1>149,50</h1>
+                    <a class="vertical_compra__botao"
+                        href="https://store.playstation.com/pt-br/product/UP2080-PPSA17152_00-DIESELLEGACY0000"
+                        target="_blank"></a>
+                </div>
+            </div>
 
-            <div class="shop_card_horizontal jogo3">
-                <p><strong>Assuma o papel de um colono em Marte e lute pela sobrevivência em um ambiente hostil.</strong> Explore o planeta vermelho, colete recursos e enfrente perigos desconhecidos neste jogo de aventura e sobrevivência.</p>
+            <div class="shop_card_horizontal jogo jogo3" data-mode="online offline" data-platform="desktop"
+                data-price="medio">
+                <p><strong>Assuma o papel de um colono em Marte e lute pela sobrevivência em um ambiente
+                        hostil.</strong> Explore o planeta vermelho, colete recursos e enfrente perigos desconhecidos
+                    neste jogo de aventura e sobrevivência.</p>
                 <div class="horizontal_compra">
-                    <h3>R$</h3> <h1>59,90</h1>
-                    <a class="horizontal_compra__botao" href="https://store.playstation.com/pt-br/concept/10001260" target="_blank"></a>
+                    <h3>R$</h3>
+                    <h1>59,90</h1>
+                    <a class="horizontal_compra__botao" href="https://store.playstation.com/pt-br/concept/10001260"
+                        target="_blank"></a>
                 </div>
             </div>
 
-            <!--BLOCO 3-->
-
-            <div class="shop_row">
-                <div class="shop_card_vertical">
-                    <div class="vertical jogo4">
-                        <p>Acompanhe Momo em sua jornada para salvar seu reino de uma invasão demoníaca. Explore um mundo belíssimo em pixel art, <strong>enfrente chefes desafiadores e desvende os segredos de uma maldição ancestral.</strong></p>
-                        <div class="vertical_compra">
-                            <h3>R$</h3> <h1>84,50</h1>
-                            <a class="vertical_compra__botao" href="https://store.playstation.com/pt-br/product/JP0122-PPSA25804_00-000000MOMODORAMF" target="_blank"></a>
-                        </div>
-                    </div>
-
-                    <div class="vertical jogo5">
-                        <p><strong>Um FPS de ação frenética em estilo anime retrô.</strong> Lute contra hordas de inimigos em cenários vibrantes e cheios de explosões. Prepare-se para uma experiência caótica e divertida!</p>
-                        <div class="vertical_compra">
-                            <h3>R$</h3> <h1>49,95</h1>
-                            <a class="vertical_compra__botao" href="https://www.nuuvem.com/br-pt/item/mullet-madjack" target="_blank"></a>
-                        </div>
-                    </div>
+            <div class="vertical jogo jogo4" data-mode="offline" data-platform="desktop console" data-price="alto">
+                <p>Acompanhe Momo em sua jornada para salvar seu reino de uma invasão demoníaca. Explore um
+                    mundo belíssimo em pixel art, <strong>enfrente chefes desafiadores e desvende os segredos de
+                        uma maldição ancestral.</strong></p>
+                <div class="vertical_compra">
+                    <h3>R$</h3>
+                    <h1>84,50</h1>
+                    <a class="vertical_compra__botao"
+                        href="https://store.playstation.com/pt-br/product/JP0122-PPSA25804_00-000000MOMODORAMF"
+                        target="_blank"></a>
                 </div>
             </div>
-            
-            <!--BLOCO 4-->
 
-            <div class="shop_card_horizontal jogo6">
-                <p><strong>Explore um mundo surreal e interconectado, desafiando a gravidade e enfrentando inimigos implacáveis.</strong> Desvende os mistérios de Salt e liberte-o da opressão neste jogo de ação e aventura em estilo Metroidvania.</p>
+            <div class="vertical jogo jogo5" data-mode="offline" data-platform="desktop console" data-price="medio">
+                <p><strong>Um FPS de ação frenética em estilo anime retrô.</strong> Lute contra hordas de
+                    inimigos em cenários vibrantes e cheios de explosões. Prepare-se para uma experiência
+                    caótica e divertida!</p>
+                <div class="vertical_compra">
+                    <h3>R$</h3>
+                    <h1>49,95</h1>
+                    <a class="vertical_compra__botao" href="https://www.nuuvem.com/br-pt/item/mullet-madjack"
+                        target="_blank"></a>
+                </div>
+            </div>
+
+            <div class="shop_card_horizontal jogo jogo6" data-mode="offline" data-platform="desktop console mobile"
+                data-price="baixo">
+                <p><strong>Explore um mundo surreal e interconectado, desafiando a gravidade e enfrentando inimigos
+                        implacáveis.</strong> Desvende os mistérios de Salt e liberte-o da opressão neste jogo de ação e
+                    aventura em estilo Metroidvania.</p>
                 <div class="horizontal_compra">
-                    <h3>R$</h3> <h1>15,98</h1>
-                    <a class="horizontal_compra__botao" href="https://store.playstation.com/pt-br/product/UP2320-CUSA10749_00-DANDARALONGHATH1" target="_blank"></a>
+                    <h3>R$</h3>
+                    <h1>15,98</h1>
+                    <a class="horizontal_compra__botao"
+                        href="https://store.playstation.com/pt-br/product/UP2320-CUSA10749_00-DANDARALONGHATH1"
+                        target="_blank"></a>
                 </div>
             </div>
-            
-            <!--BLOCO 5-->
 
-            <div class="shop_row">
-                <div class="shop_card_vertical">
-                    <div class="vertical jogo7">
-                        <p>Uma homenagem aos clássicos jogos de corrida arcade dos anos 80 e 90. <strong>Dispute corridas emocionantes em cenários vibrantes e coloridos, com uma trilha sonora contagiante.</strong></p>
-                        <div class="vertical_compra">
-                            <h3>R$</h3> <h1>69,90</h1>
-                            <a class="vertical_compra__botao" href="https://store.playstation.com/pt-br/product/UP0040-CUSA11275_00-HORIZONCHASETURB" target="_blank"></a>
-                        </div>
-                    </div>
+            <div class="vertical jogo jogo7" data-mode="online offline" data-platform="desktop console"
+                data-price="medio">
+                <p>Uma homenagem aos clássicos jogos de corrida arcade dos anos 80 e 90. <strong>Dispute
+                        corridas emocionantes em cenários vibrantes e coloridos, com uma trilha sonora
+                        contagiante.</strong></p>
+                <div class="vertical_compra">
+                    <h3>R$</h3>
+                    <h1>69,90</h1>
+                    <a class="vertical_compra__botao"
+                        href="https://store.playstation.com/pt-br/product/UP0040-CUSA11275_00-HORIZONCHASETURB"
+                        target="_blank"></a>
+                </div>
+            </div>
 
-                    <div class="vertical jogo8">
-                        <p>Um jogo de ação e tiro no estilo "run and gun", inspirado nos clássicos dos anos 90. <strong>Enfrente hordas de robôs e chefes gigantescos em cenários futuristas e explosivos.</strong></p>
-                        <div class="vertical_compra">
-                            <h3>R$</h3> <h1>26,97</h1>
-                            <a class="vertical_compra__botao" href="https://store.playstation.com/pt-br/product/UP5358-CUSA14656_00-BLAZINGCHROMEPS4" target="_blank"></a>
-                        </div>
-                    </div>
+            <div class="vertical jogo jogo8" data-mode="online offline " data-platform="desktop console"
+                data-price="baixo">
+                <p>Um jogo de ação e tiro no estilo "run and gun", inspirado nos clássicos dos anos 90.
+                    <strong>Enfrente hordas de robôs e chefes gigantescos em cenários futuristas e
+                        explosivos.</strong>
+                </p>
+                <div class="vertical_compra">
+                    <h3>R$</h3>
+                    <h1>26,97</h1>
+                    <a class="vertical_compra__botao"
+                        href="https://store.playstation.com/pt-br/product/UP5358-CUSA14656_00-BLAZINGCHROMEPS4"
+                        target="_blank"></a>
                 </div>
             </div>
 
@@ -108,7 +160,7 @@
 
     <footer class="rodapé">
         <h2 class="rodapé__titulo">Iara Games</h2>
-        
+
         <ul class="lista-rodapé">
             <li class="lista-rodapé__titulo">Loja</li>
             <li class="lista-rodapé__item">
@@ -118,7 +170,7 @@
                 <a href="#" class="lista-rodapé__link">Novos lançamentos</a>
             </li>
         </ul>
-    
+
         <ul class="lista-rodapé">
             <li class="lista-rodapé__titulo">Jogos</li>
             <li class="lista-rodapé__item"><a href="#" class="lista-rodapé__link">No Place for Bravery</a></li>
@@ -128,7 +180,7 @@
             <li class="lista-rodapé__item"><a href="#" class="lista-rodapé__link">Dandara</a></li>
             <li class="lista-rodapé__item"><a href="#" class="lista-rodapé__link">Out There Somewhere</a></li>
         </ul>
-    
+
         <ul class="lista-rodapé">
             <li class="lista-rodapé__titulo">Sociais</li>
             <li class="lista-rodapé__item">
@@ -153,5 +205,8 @@
             </li>
         </ul>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
+
 </html>

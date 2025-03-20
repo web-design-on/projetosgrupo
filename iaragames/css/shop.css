@@ -2,16 +2,12 @@
 
 .shop {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-image: url(../assets/game_cards/bg_texture1.svg);
-    background-blend-mode: multiply;
-}
-
-.shop_card_vertical {
-    display: flex;
-    gap: 3.2rem;
-    margin: 3.2rem 0;
+    justify-content: center;
+    max-width: 534px;
+    gap: 16px;
+    margin: auto;
+    flex-wrap: wrap;
 }
 
 .vertical {
@@ -21,18 +17,18 @@
     color: black;
     padding: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    p {
+        margin-bottom: 1rem;
+        margin: 32.2em 10rem 0 0.6rem;
+        font-size: 0.6rem;
+        width: 230px;
+    }
 }
 
 .vertical:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-}
-
-.shop_row p {
-    margin-bottom: 1rem;
-    margin: 32.2em 10rem 0 0.6rem;
-    font-size: 0.6rem;
-    width: 230px;
 }
 
 .vertical_compra {
@@ -138,6 +134,6 @@
 }
 
 .jogo1, .jogo2, .jogo3, .jogo4, .jogo5, .jogo6, .jogo7, .jogo8 {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
