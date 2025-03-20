@@ -1,5 +1,3 @@
-@import url(style.css);
-
 .shop {
     display: flex;
     align-items: center;
@@ -48,7 +46,7 @@
 }
 
 .vertical_compra__botao {
-    background-image: url(../assets/game_cards/cart_button.png);
+    background-image: url(../img/game_cards/cart_button.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin: 1.2rem 0 0 0.5rem;
@@ -94,46 +92,46 @@
 }
 
 .horizontal_compra__botao {
-    background-image: url(../assets/game_cards/cart_button.png);
+    background-image: url(../img/game_cards/cart_button.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0.6rem 0 0 0.5rem;
     width: 90px;
 }
 
+.jogo {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .jogo1 {
-    background-image: url(../assets/game_cards/card1-deathbound.png);
+    background-image: url(../img/game_cards/card1-deathbound.png);
 }
 
 .jogo2 {
-    background-image: url(../assets/game_cards/card2-diesellegacy.png);
+    background-image: url(../img/game_cards/card2-diesellegacy.png);
 }
 
 .jogo3 {
-    background-image: url(../assets/game_cards/card3-mars2120.png);
+    background-image: url(../img/game_cards/card3-mars2120.png);
 }
 
 .jogo4 {
-    background-image: url(../assets/game_cards/card4-momodora.png);
+    background-image: url(../img/game_cards/card4-momodora.png);
 }
 
 .jogo5 {
-    background-image: url(../assets/game_cards/card5-mulletmadjack.png);
+    background-image: url(../img/game_cards/card5-mulletmadjack.png);
 }
 
 .jogo6 {
-    background-image: url(../assets/game_cards/card6-dandara.png);
+    background-image: url(../img/game_cards/card6-dandara.png);
 }
 
 .jogo7 {
-    background-image: url(../assets/game_cards/card7-horizonchase.png);
+    background-image: url(../img/game_cards/card7-horizonchase.png);
 }
 
 .jogo8 {
-    background-image: url(../assets/game_cards/card8-blazingchrome.png);
-}
-
-.jogo1, .jogo2, .jogo3, .jogo4, .jogo5, .jogo6, .jogo7, .jogo8 {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../img/game_cards/card8-blazingchrome.png);
 }

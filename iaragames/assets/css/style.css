@@ -24,10 +24,27 @@ body {
 }
 
 main {
-    background-image: url(../assets/game_cards/bg_texture1.svg);
+    background-image: url(../img/bg_texture1.svg);
+}
+
+.container {
+    padding: 16px 16%;
+    margin: auto;
 }
 
 .btn {
     padding: 6px 12px;
     border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 16px 12%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        padding: 16px 8%;
+    }
 }

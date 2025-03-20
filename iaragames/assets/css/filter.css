@@ -27,8 +27,8 @@
         font-weight: bold;
 
         &:is(:hover, :active, :focus) {
-            background-color: #faa836;
-            border: 2px solid #faa836;
+            background-color: var(--cor-secundaria);
+            border: 2px solid var(--cor-secundaria);
         }
     }
 }
