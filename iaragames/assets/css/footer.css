@@ -13,7 +13,7 @@
 }
 
 .rodapé {
-    background: rgba(0, 0, 0, 0.9);
+    background: var(--cor-principal);
     border-top: 4px solid var(--cor-destaque); /* Borda neon verde */
     padding: 50px 20px;
     text-align: center;
@@ -22,6 +22,11 @@
     justify-content: space-around;
     position: relative;
     box-shadow: 0px -5px 15px var(--cor-destaque);
+    }
+
+.rodapé_logo {
+    width: 140px;
+    height: 110px;
 }
 
 .rodapé__titulo {
@@ -51,9 +56,9 @@
 
 .lista-rodapé__item {
     display: flex;
-    align-items: center;
-    margin: 12px 0;
-    transition: transform 0.3s ease;
+    justify-content: center; 
+    gap: 10px;
+
 }
 
 .lista-rodapé__item:hover {
@@ -67,6 +72,9 @@
     transition: 0.3s;
     margin-left: 10px;
     text-shadow: 0 0 10px var(--cor-secundaria);
+    margin-top: 15px;
+    display: flexbox;
+    
 }
 
 .lista-rodapé__link:hover {
@@ -79,6 +87,9 @@
 
 .lista-rodapé__item img {
     width: 24px;
-    height: 24px;
-    filter: drop-shadow(0 0 5px rgb(3, 191, 122));
+    height: 50px;
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+    display: flex;
+    
 }
+
