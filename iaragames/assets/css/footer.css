@@ -1,3 +1,6 @@
+@import url(style.css);
+
+
 @keyframes neonGlow {
     from {
         opacity: 0.2;
@@ -11,22 +14,22 @@
 
 .rodapé {
     background: rgba(0, 0, 0, 0.9);
-    border-top: 4px solid rgb(7, 136, 123); /* Borda neon verde */
+    border-top: 4px solid var(--cor-destaque); /* Borda neon verde */
     padding: 50px 20px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     position: relative;
-    box-shadow: 0px -5px 15px rgba(0, 255, 0, 0.5);
+    box-shadow: 0px -5px 15px var(--cor-destaque);
 }
 
 .rodapé__titulo {
     font-size: 28px;
     font-weight: bold;
-    color: rgba(24, 252, 24, 0.815);
+    color: var(--cor-secundaria);
     text-transform: uppercase;
-    text-shadow: 0 0 15px #0f0;
+    text-shadow: 0 0 15px var(--cor-secundaria);
     margin-bottom: 20px;
 }
 
@@ -40,10 +43,10 @@
 .lista-rodapé__titulo {
     font-size: 20px;
     font-weight: bold;
-    color: rgb(245, 245, 155);
+    color: var(--cor-destaque);
     text-transform: uppercase;
     margin-bottom: 15px;
-    text-shadow: 0 0 10px rgb(242, 247, 0);
+    text-shadow: 0 0 10px var(--cor-destaque);
 }
 
 .lista-rodapé__item {
@@ -63,19 +66,19 @@
     font-size: 18px;
     transition: 0.3s;
     margin-left: 10px;
-    text-shadow: 0 0 10px rgb(250, 214, 54);
+    text-shadow: 0 0 10px var(--cor-secundaria);
 }
 
 .lista-rodapé__link:hover {
-    color: rgb(250, 214, 54);
+    color: var(--cor-secundaria);
     background: #111;
     padding: 6px 12px;
     border-radius: 8px;
-    box-shadow: 0px 0px 12px rgb(250, 214, 54);
+    box-shadow: 0px 0px 12px var(--cor-secundaria);
 }
 
 .lista-rodapé__item img {
     width: 24px;
     height: 24px;
-    filter: drop-shadow(0 0 5px #0f0);
+    filter: drop-shadow(0 0 5px rgb(3, 191, 122));
 }
