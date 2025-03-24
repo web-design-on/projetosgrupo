@@ -68,7 +68,8 @@ header {
 }
 
 .btn_header:hover {
-    background-color: #08695F;
+    background-color: var(--cor-secundaria);
+    color: #FFFFFF;
 }
 
 @media (max-width: 768px) {

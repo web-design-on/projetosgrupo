@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -13,7 +14,6 @@
     --cor-secundaria: #08695F;
     --cor-destaque: #FAA836;
     --gradiente: linear-gradient(148deg, rgba(21,25,62,1) 0%, rgba(8,105,95,1) 100%);
-
     --fonte-titulo: "Doppio One", sans-serif;
     --fonte-conteudo: "Montserrat", sans-serif;
 }
