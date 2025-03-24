@@ -1,0 +1,20 @@
+.recomendacoes {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.conteudo {
+    width: 50%;
+    .titulo{
+        margin-bottom: 16px;
+    }
+}
+
+.imagens {
+    width: 50%;
+    img {
+        width: 30%;
+        padding: 0 8px;
+    }
+}
