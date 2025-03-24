@@ -9,12 +9,15 @@
 }
 
 .vertical {
-    width: 258.96px;
+    width: calc(50% - 10px);
     height: 450px;
     border-radius: 15px;
     color: black;
     padding: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .vertical > p {
@@ -135,4 +138,10 @@
 
 .jogo8 {
     background-image: url(../img/game_cards/card8-blazingchrome.png);
+}
+
+@media screen and (max-width: 525px) {
+    .vertical {
+        width: 100%;
+    }
 }

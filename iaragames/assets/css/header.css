@@ -9,7 +9,8 @@
     justify-content: center;
     text-align: center;
     position: relative;
-    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 24%);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 24%);    
+    padding-bottom: 60px;
 }
 
 header {
@@ -27,8 +28,6 @@ header {
 }
 
 .navbar_header {
-    width: 100%;
-    max-width: 1000px;
     display: flex;
     justify-content: left;
     position: absolute;
@@ -72,17 +71,15 @@ header {
     background-color: #08695F;
 }
 
-@media (max-width: 525px) {
-
+@media (max-width: 768px) {
     .container {
         justify-content: center;
-        text-align: center;
     }
 
     header {
         max-width: 90%;
         padding: 10px;
-        margin-top: 120px;
+        margin: 120px auto 16px;
         background: rgba(0, 0, 0, 0.836);
     }
 }
