@@ -1,20 +1,19 @@
-@import url(style.css);
-
-
 @keyframes neonGlow {
     from {
         opacity: 0.2;
         transform: scale(1);
     }
+
     to {
         opacity: 0.4;
         transform: scale(1.1);
     }
 }
 
-.rodapé {
+.rodape {
     background: var(--cor-principal);
-    border-top: 4px solid var(--cor-destaque); /* Borda neon verde */
+    border-top: 4px solid var(--cor-destaque);
+    /* Borda neon verde */
     padding: 50px 20px;
     text-align: center;
     display: flex;
@@ -22,14 +21,14 @@
     justify-content: space-around;
     position: relative;
     box-shadow: 0px -5px 15px var(--cor-destaque);
-    }
+}
 
-.rodapé_logo {
+.rodape_logo {
     width: 140px;
     height: 110px;
 }
 
-.rodapé__titulo {
+.rodape__titulo {
     font-size: 28px;
     font-weight: bold;
     color: var(--cor-secundaria);
@@ -38,14 +37,29 @@
     margin-bottom: 20px;
 }
 
-.lista-rodapé {
+.lista-rodape {
     list-style: none;
     padding: 0;
     margin: 20px;
     min-width: 250px;
+
+    .redes-sociais {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+
+        .lista-rodape__link {
+            display: flex;
+
+            &:is(:active, :focus, :hover) {
+                margin: unset;
+                padding: 8px;
+            }         
+        }
+    }
 }
 
-.lista-rodapé__titulo {
+.lista-rodape__titulo {
     font-size: 20px;
     font-weight: bold;
     color: var(--cor-destaque);
@@ -54,42 +68,42 @@
     text-shadow: 0 0 10px var(--cor-destaque);
 }
 
-.lista-rodapé__item {
+.lista-rodape__item {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     gap: 10px;
-
 }
 
-.lista-rodapé__item:hover {
+.lista-rodape__item:hover {
     transform: scale(1.1);
 }
 
-.lista-rodapé__link {
+.lista-rodape__link {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s;
-    margin-left: 10px;
     text-shadow: 0 0 10px var(--cor-secundaria);
     margin-top: 15px;
-    display: flexbox;
-    
+
+    img {
+        height: 24px;
+        width: 24px;
+        filter: invert(1);
+    }
 }
 
-.lista-rodapé__link:hover {
-    color: var(--cor-secundaria);
-    background: #111;
+.lista-rodape__link:hover {
+    color: var(--cor-destaque);
+    background: var(--cor-principal-hover);
     padding: 6px 12px;
     border-radius: 8px;
-    box-shadow: 0px 0px 12px var(--cor-secundaria);
+    box-shadow: 0px 0px 12px var(--cor-destaque);
 }
 
-.lista-rodapé__item img {
+.lista-rodape__item img {
     width: 24px;
     height: 50px;
     filter: drop-shadow(0 0 5px rgb(255, 255, 255));
     display: flex;
-    
 }
-
