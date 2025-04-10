@@ -1,114 +1,85 @@
-@keyframes neonGlow {
-    from {
-        opacity: 0.2;
-        transform: scale(1);
-    }
-
-    to {
-        opacity: 0.4;
-        transform: scale(1.1);
-    }
-}
-
 .rodape {
     background: var(--cor-principal);
     border-top: 4px solid var(--cor-destaque);
-    /* Borda neon verde */
     padding: 50px 20px;
-    text-align: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    position: relative;
+    align-items: flex-start;
+    gap: 40px;
     box-shadow: 0px -5px 15px var(--cor-destaque);
 }
 
 .rodape_logo {
     width: 140px;
-    height: 110px;
-}
-
-.rodape__titulo {
-    font-size: 28px;
-    font-weight: bold;
-    color: var(--cor-secundaria);
-    text-transform: uppercase;
-    text-shadow: 0 0 15px var(--cor-secundaria);
-    margin-bottom: 20px;
+    height: auto;
 }
 
 .lista-rodape {
     list-style: none;
     padding: 0;
-    margin: 20px;
-
-    .redes-sociais {
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-
-        .lista-rodape__link {
-            display: flex;
-
-            &:is(:active, :focus, :hover) {
-                margin: unset;
-                padding: 8px;
-            }         
-        }
-    }
+    margin: 0;
+    min-width: 200px;
 }
 
 .lista-rodape__titulo {
     font-size: 20px;
     font-weight: bold;
     color: var(--cor-destaque);
+    text-align: center;
     text-transform: uppercase;
     margin-bottom: 15px;
     text-shadow: 0 0 10px var(--cor-destaque);
 }
 
 .lista-rodape__item {
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
-    gap: 10px;
-}
-
-.lista-rodape__item:hover {
-    transform: scale(1.1);
 }
 
 .lista-rodape__link {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    transition: 0.3s;
     text-shadow: 0 0 10px var(--cor-secundaria);
-    margin-top: 15px;
-
-    img {
-        height: 24px;
-        width: 24px;
-        filter: invert(1);
-    }
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.lista-rodape__link:hover {
+.lista-rodape__link:hover,
+.lista-rodape__link:focus {
     color: var(--cor-destaque);
-    background: var(--cor-principal-hover);
+    background-color: var(--cor-principal-hover);
     padding: 6px 12px;
     border-radius: 8px;
     box-shadow: 0px 0px 12px var(--cor-destaque);
+    outline: 2px solid var(--cor-destaque);
 }
 
-.lista-rodape__item img {
+.lista-rodape__link img {
     width: 24px;
-    height: 50px;
-    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+    height: 24px;
+    filter: invert(1);
+}
+
+.redes-sociais {
     display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 920px) {
     .rodape {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+
+    .lista-rodape {
+        margin-bottom: 30px;
     }
 }
