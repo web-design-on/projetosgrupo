@@ -16,10 +16,15 @@
 
 <body>
     <header>
-        <nav>
-            <a class="navbar_header" href="index.html">Home</a>
-        </nav>
-    </header>
+        <div class="navbar_header">
+            <img src="./assets/img/logo.png" alt="Logo da Iara Games" class="logo">
+            <nav class="navbar_nav">
+                <a class="navbar_header_link" href="index.html">Página inicial</a>
+                <a class="navbar_header_link" href="#">Produto</a>
+                <a class="navbar_header_link" href="formulario.html">Cadastrar-se</a>
+            </nav>
+        </div>
+    </header> 
     <div class="campo">
         <h1 id="titulo">CADASTRAR-SE</h1>
         <p id="subtitulo">Cadastre suas informações e fique por dentro das novidades</p>
@@ -36,9 +41,9 @@
                 <label for="sobrenome"><strong>Sobrenome</strong></label>
                 <input type="text" nome="sobrenome" id="sobrenome" required>
             </div>
-      </fieldset>
+    </fieldset>
 
-      <fieldset class="grupo">
+    <fieldset class="grupo">
         <div class="campo">
             <label for="email"><strong>E-mail</strong></label>
             <input type="email" nome="email" id="email" required>
@@ -48,8 +53,8 @@
             <input type="text" nome="whatsapp" id="whatsapp" required>
         </div>
     </fieldset>
-      
-      <div id="check">
+    
+    <div id="check">
         <label><strong>Qual forma de contato você prefere?</strong></label><br>
         <label>
             <input type="radio" name="contato" value="celular" checked>Celular
@@ -57,9 +62,9 @@
         <label>
             <input type="radio" name="contato" value="email">E-mail
         </label>
-      </div><br>
+    </div><br>
 
-      <div class="campo">
+    <div class="campo">
         <label><strong>Consoles que possui</strong></label>
         <select id="consoles">
             <option selected disabled value="">Selecione</option>
@@ -67,9 +72,9 @@
             <option>Xbox</option>
             <option>Nintendo Switch</option>
         </select>
-      </div>
+    </div>
 
-      <fieldset class="grupo">
+    <fieldset class="grupo">
         <div id="check">
             <label><strong>Selecione as gêneros de jogos que te interessam:</strong></label>
             <input type="checkbox" id="area1" nome="area1" value="FPS">
@@ -83,15 +88,15 @@
             <input type="checkbox" id="area5" nome="area5" value="MMORPG">
             <label for="area5">MMORPG</label><br>
         </div>
-      </fieldset>
+    </fieldset>
 
-      <div class="campo">
+    <div class="campo">
         <br>
         <label><strong>Quer deixar um comentário?</strong></label>
         <textarea rows="6" style="width: 26em" name="experiencia" id="experiencia"></textarea>
-      </div>
+    </div>
 
-      <button class="botao" type="submit" onsubmit="">ENVIAR</button>
+    <button class="botao" type="submit" onsubmit="">ENVIAR</button>
 
     </form>
 
