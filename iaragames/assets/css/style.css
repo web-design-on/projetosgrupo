@@ -13,19 +13,20 @@
     --cor-principal-hover: #00042b;
     --cor-secundaria: #08695F;
     --cor-destaque: #FAA836;
-    --gradiente: linear-gradient(148deg, rgba(21,25,62,1) 0%, rgba(8,105,95,1) 100%);
+    --cor-fundo: #0b1929;
+    --gradiente: linear-gradient(160deg,rgba(11, 25, 41, 1) 0%, rgba(3, 11, 20, 1) 100%);
     --fonte-titulo: "Doppio One", sans-serif;
     --fonte-conteudo: "Montserrat", sans-serif;
 }
 
 body {
-    background-image:var(--gradiente);
+    background-color: var(--cor-fundo);
     font-family: var(--fonte-conteudo);
     color: white;
 }
 
 main {
-    background-image: url(../img/bg_texture1.svg);
+    background-color:linear-gradient(160deg,rgba(8, 12, 38, 1) 0%, rgba(10, 13, 41, 1) 100%);
 }
 
 .container {

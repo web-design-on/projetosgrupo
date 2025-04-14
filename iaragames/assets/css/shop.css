@@ -1,143 +1,69 @@
-.shop {
+.shop_cards {
     display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    flex-wrap: wrap;
+    list-style-type: none;
     align-items: center;
     justify-content: center;
-    max-width: 534px;
-    gap: 16px;
-    margin: auto;
-    flex-wrap: wrap;
 }
 
-.vertical {
-    width: calc(50% - 10px);
-    height: 450px;
-    border-radius: 15px;
-    color: black;
-    padding: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.shop_card-item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 32%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 17em;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    cursor: pointer;
 }
 
-.vertical > p {
-    margin-bottom: 1rem;
-    margin: 32.2em 10rem 0 0.6rem;
-    font-size: 0.6rem;
-    width: 230px;
+.shop_card-imagem {
+    width: 100%;
+    object-fit: cover;
 }
 
+.shop_card-container {
+    padding: 0.5rem;
+    font-family: var(--fonte-conteudo);
+    flex-grow: 1;
+    background-color: #182534;
+    border-radius: 0 0 15px 15px;
 
-.vertical:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-}
-
-.vertical_compra {
+    
     display: flex;
-    font-family: var(--fonte-titulo);
-}
-
-.vertical_compra_moeda {
-    margin: 1rem 0 0 0.6rem;
-    font-size: 0.9rem;
-}
-
-.vertical_compra_valor {
-    margin: 0 0 0 0.2rem;
-    padding: 10px 0 0 0;
-    font-size: 1.8rem;
-}
-
-.vertical_compra__botao {
-    background-image: url(../img/game_cards/cart_button.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 1.2rem 0 0 0.5rem;
-    width: 60px;
-}
-
-.shop_card_horizontal {
-    display: flex;
+    gap: 10px;
     flex-direction: column;
-    border-radius: 15px;
-    color: black;
-    width: 570.37px;
-    height: 258.96px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: space-between;
 }
 
-.shop_card_horizontal:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+.shop_card-item-titulo {
+    font-family: var(--fonte-conteudo);
+    font-weight: 800;
+    font-size: 1rem;
 }
 
-.shop_card_horizontal > p {
-    margin-bottom: 1rem;
-    margin: 10em 0 0 2rem;
-    font-size: 0.6rem;
-    width: 225px;
+.shop_card-item-descricao {
+    font-size: 0.8rem;
 }
 
-.horizontal_compra {
-    display: flex;
-    padding: 5px 0 0 0;
-    font-family: var(--fonte-titulo);
+.shop_card-item-preco {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(160deg, rgba(250, 168, 54, 1) 0%, rgba(250, 116, 54, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.horizontal_compra_moeda {
-    margin: 0.3rem 0 0 2rem;
-    font-size: 0.9rem;
-}
-
-.horizontal_compra_valor {
-    margin: 0 0 0 0.2rem;
-    font-size: 1.8rem;
-}
-
-.horizontal_compra__botao {
+.shop_card-botao {
     background-image: url(../img/game_cards/cart_button.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0.6rem 0 0 0.5rem;
     width: 90px;
-}
-
-.jogo {
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.jogo1 {
-    background-image: url(../img/game_cards/card1-deathbound.png);
-}
-
-.jogo2 {
-    background-image: url(../img/game_cards/card2-diesellegacy.png);
-}
-
-.jogo3 {
-    background-image: url(../img/game_cards/card3-mars2120.png);
-}
-
-.jogo4 {
-    background-image: url(../img/game_cards/card4-momodora.png);
-}
-
-.jogo5 {
-    background-image: url(../img/game_cards/card5-mulletmadjack.png);
-}
-
-.jogo6 {
-    background-image: url(../img/game_cards/card6-dandara.png);
-}
-
-.jogo7 {
-    background-image: url(../img/game_cards/card7-horizonchase.png);
-}
-
-.jogo8 {
-    background-image: url(../img/game_cards/card8-blazingchrome.png);
 }
 
 @media screen and (max-width: 525px) {

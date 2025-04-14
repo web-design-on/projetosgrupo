@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/filter.css">
+    <link rel="stylesheet" href="./assets/css/shop.css">
+    <link rel="stylesheet" href="./assets/css/recomendacoes.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <title>Iara Games</title>
+</head>
+
+<body>
+    <div class="campo">
+        <h1 id="titulo">CADASTRAR-SE</h1>
+        <p id="subtitulo">Cadastre suas informações e fique por dentro das novidades</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" nome="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" nome="sobrenome" id="sobrenome" required>
+            </div>
+      </fieldset>
+
+      <fieldset class="grupo">
+        <div class="campo">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" nome="email" id="email" required>
+        </div>
+        <div class="campo">
+            <label for="whatsapp"><strong>WhatsApp</strong></label>
+            <input type="text" nome="whatsapp" id="whatsapp" required>
+        </div>
+    </fieldset>
+      
+      <div id="check">
+        <label><strong>Qual forma de contato você prefere?</strong></label><br>
+        <label>
+            <input type="radio" name="contato" value="celular" checked>Celular
+        </label>
+        <label>
+            <input type="radio" name="contato" value="email">E-mail
+        </label>
+      </div><br>
+
+      <div class="campo">
+        <label><strong>Consoles que possui</strong></label>
+        <select id="consoles">
+            <option selected disabled value="">Selecione</option>
+            <option>PlayStation</option>
+            <option>Xbox</option>
+            <option>Nintendo Switch</option>
+        </select>
+      </div>
+
+      <fieldset class="grupo">
+        <div id="check">
+            <label><strong>Selecione as gêneros de jogos que te interessam:</strong></label>
+            <input type="checkbox" id="area1" nome="area1" value="FPS">
+            <label for="area1">FPS</label><br>
+            <input type="checkbox" id="area2" nome="area2" value="Battle Royale">
+            <label for="area2">Battle Royale</label>
+            <input type="checkbox" id="area3" nome="area3" value="MOBA">
+            <label for="area3">MOBA</label>
+            <input type="checkbox" id="area4" nome="area4" value="RPG">
+            <label for="area4">RPG</label>
+            <input type="checkbox" id="area5" nome="area5" value="MMORPG">
+            <label for="area5">MMORPG</label><br>
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <br>
+        <label><strong>Quer deixar um comentário?</strong></label>
+        <textarea rows="6" style="width: 26em" name="experiencia" id="experiencia"></textarea>
+      </div>
+
+      <button class="botao" type="submit" onsubmit="">ENVIAR</button>
+
+    </form>
+
+    <footer class="rodape" role="contentinfo" aria-label="Rodapé da Iara Games">
+        <img class="rodape_logo" src="./assets/img/logo.png" alt="Logo da Iara Games">
+    
+        <ul class="lista-rodape" aria-label="Links da Loja">
+            <li class="lista-rodape__titulo">Loja</li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Ofertas e promoções</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Novos lançamentos</a>
+            </li>
+        </ul>
+    
+        <ul class="lista-rodape" aria-label="Jogos disponíveis">
+            <li class="lista-rodape__titulo">Jogos</li>
+            <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">No Place for Bravery</a></li>
+            <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Fobia – St. Dinfna Hotel</a></li>
+            <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Kukoos: Lost Pets</a></li>
+            <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Chroma Squad</a></li>
+            <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Dandara</a></li>
+            <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Out There Somewhere</a></li>
+        </ul>
+    
+        <ul class="lista-rodape" aria-label="Redes sociais da empresa">
+            <li class="lista-rodape__titulo">Sociais</li>
+            <li class="lista-rodape__item redes-sociais">
+                <a href="#" class="lista-rodape__link" aria-label="WhatsApp da empresa">
+                    <img src="./assets/img/footer/whatsapp.svg" alt="Logo do WhatsApp">
+                </a>
+                <a href="#" class="lista-rodape__link" aria-label="Facebook da empresa">
+                    <img src="./assets/img/footer/facebook.svg" alt="Logo do Facebook">
+                </a>
+                <a href="#" class="lista-rodape__link" aria-label="Telefone da empresa">
+                    <img src="./assets/img/footer/telephone-fill.svg" alt="Ícone de telefone">
+                </a>
+                <a href="#" class="lista-rodape__link" aria-label="Discord da empresa">
+                    <img src="./assets/img/footer/discord.svg" alt="Logo do Discord">
+                </a>
+                <a href="#" class="lista-rodape__link" aria-label="Instagram da empresa">
+                    <img src="./assets/img/footer/instagram.svg" alt="Logo do Instagram">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
