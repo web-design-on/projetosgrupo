@@ -14,28 +14,3 @@
     margin: auto;
 }
 
-.formu {
-    
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--cor-destaque);
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.formu:hover {
-    background-color: var(--cor-secundaria);
-    color: #FFFFFF;
-}
-
-
-.navbar_header_link:hover,
-.navbar_header_link:focus {
-    color:var(--cor-destaque);
-    outline: none;
-}
-
-
