@@ -1,0 +1,118 @@
+.campo {
+    margin-bottom: 20px;
+}
+
+#titulo {
+    font-size: 2em;
+    color: #f4a300;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#subtitulo {
+    font-size: 1.1em;
+    text-align: center;
+    color: #ffffff;
+}
+
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #182534;
+    padding: 20px 30px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+fieldset.grupo {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+fieldset.grupo .campo {
+    flex: 10px;
+    min-width: 250px;
+}
+
+label {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+svg,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #243b55;
+    color: #f0f0f0;
+    margin-bottom: 5px;
+    border: 2px solid #243b55;   
+}
+
+#check {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#check label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#check input[type="radio"],
+#check input[type="checkbox"] {
+    accent-color: #f4a300; 
+    margin-right: 50px;
+    transform: scale(1.1); 
+}
+
+button.botao {
+    display: block;
+    width: 100%;
+    background-color: #f4a300;
+    color: #0d1b2a;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#experiencia {
+    width: 100%;               
+    height: auto;              
+    font-size: 15px;           
+    border: 2px solid #243b55;    
+    border-radius: 8px;        
+    resize: vertical;          
+    box-sizing: border-box;    
+}
+
+#experiencia:focus,
+#nome:focus,
+#sobrenome:focus,
+#email:focus, 
+#whatsapp:focus
+{
+    border-color: #08695F;
+    outline: none;
+}
+
+button.botao:hover {
+    background-color: #08695F;
+}
