@@ -2,12 +2,10 @@
 .navbar_nav {
     display: flex;
     gap: 6rem;
-    padding: 10px;
-    margin-left:60px;
+    padding: 16px;
 }
 
 .navbar_header_link {
-    
     align-items: flex-start;
     text-decoration: none;
     color: #ffffff;
