@@ -2,7 +2,7 @@
     display: flex;
     gap: 16px;
     justify-content: center;
-    margin: 16px auto;
+    margin: 24px auto 16px;
     align-items: end;
 
     .filter {
@@ -17,29 +17,13 @@
             border-radius: 4px;
         }
     }
-
-    .btn-filter {
-        background-color: transparent;
-        border-radius: 4px;
-        border: 2px solid white;
-        color: #FFF;
-        max-width: 80px;
-        width: 100%;
-        font-weight: bold;
-        cursor: pointer;
-
-        &:is(:hover, :active, :focus) {
-            background-color: var(--cor-secundaria);
-            border: 2px solid var(--cor-secundaria);
-        }
-    }
 }
 
 @media screen and (max-width: 525px) {
     .filters {
         flex-direction: column;
 
-        .filter, .btn-filter {
+        .filter, .btn-default {
             max-width: unset;
             width: 100%;
         }

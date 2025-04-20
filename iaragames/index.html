@@ -21,7 +21,7 @@
             <img src="./assets/img/logo.png" alt="Logo da Iara Games" class="logo">
             <nav class="navbar_nav">
                 <a class="navbar_header_link" href="index.html">Página inicial</a>
-                <a class="navbar_header_link" href="#">Produto</a>
+                <a class="navbar_header_link" href="jogos.html">Jogos</a>
                 <a class="navbar_header_link formu" href="formulario.html">Cadastrar-se</a>
             </nav>
         </div>
@@ -36,37 +36,9 @@
     </header>
 
     <main class="container">
-        <section class="filters" id="filters">
-            <div class="filter">
-                <label for="price" class="form-label">Preço</label>
-                <select id="price" class="form-select">
-                    <option value="todos">Todos</option>
-                    <option value="baixo">Até R$30,00</option>
-                    <option value="medio">Entre R$31,00 e R$60,00</option>
-                    <option value="alto">A partir de R$61,00</option>
-                </select>
-            </div>
-            <div class="filter">
-                <label for="platform" class="form-label">Plataforma</label>
-                <select id="platform" class="form-select">
-                    <option value="todas">Todas</option>
-                    <option value="console">Console</option>
-                    <option value="desktop">Desktop</option>
-                    <option value="mobile">Mobile</option>
-                </select>
-            </div>
-            <div class="filter">
-                <label for="mode" class="form-label">Modo</label>
-                <select id="mode" class="form-select">
-                    <option value="todos">Todos</option>
-                    <option value="online">Online</option>
-                    <option value="offline">Offline</option>
-                </select>
-            </div>
-            <button id="filterBtn" class="btn btn-filter">Filtrar</button>
-        </section>
+        <section class="shop">
+            <h2>Sua Próxima aventura começa aqui</h2>
 
-        <section class="shop" id="shop">
             <ul class="shop_cards">
                 <li class="shop_card-item">
                     <img src="assets/img/game_cards/deathbound.png" alt="Deathbound" class="shop_card-imagem">
@@ -164,6 +136,8 @@
                     </div>
                 </li>         
             </ul>
+
+            <a class="btn btn-default" href="jogos.html">Veja Mais</a>
         </section>
 
         <section class="recomendacoes">
@@ -226,9 +200,6 @@
             </li>
         </ul>
     </footer>
-    
-
-    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

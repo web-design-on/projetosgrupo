@@ -42,8 +42,7 @@
     border-radius: 15px;
     color: white;
     align-items: start;
-    margin-right: auto;
-    margin-top: 32px;;
+    margin: 32px 16px 0;
 }
 
 .texto_header_maior {
