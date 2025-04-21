@@ -1,3 +1,9 @@
+#cadastro {
+    .btn {
+        width: 100%;
+    }
+}
+
 .campo {
     margin-bottom: 20px;
 }
@@ -78,19 +84,6 @@ textarea {
     accent-color: #f4a300; 
     margin-right: 50px;
     transform: scale(1.1); 
-}
-
-button.botao {
-    display: block;
-    width: 100%;
-    background-color: #f4a300;
-    color: #0d1b2a;
-    padding: 15px;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 20px;
 }
 
 #experiencia {
