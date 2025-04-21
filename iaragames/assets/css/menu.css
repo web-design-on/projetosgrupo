@@ -14,3 +14,27 @@
     margin: auto;
 }
 
+@media screen and (max-width: 540px) {
+        .navbar_nav {
+            gap: 1rem;
+            align-items:end;
+            padding: 10px  ;
+        }
+    
+        .navbar_header_link {
+            font-size: 15px;
+        }
+    
+        .btn {
+            padding: 7px 15px;
+            font-size: 13px;
+        }
+    
+        .logo {
+            width: 10px; 
+            height: auto;
+            margin-bottom: 1px;
+        }
+    }
+    
+
