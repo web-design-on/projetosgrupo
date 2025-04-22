@@ -44,7 +44,6 @@
     flex-grow: 1;
     background-color: #182534;
     border-radius: 0 0 15px 15px;
-
     
     display: flex;
     gap: 10px;
@@ -74,8 +73,17 @@
     background-image: url(../img/game_cards/cart_button.png);
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 0.6rem 0 0 0.5rem;
+    background-position: center;
+    margin: 0.2rem 0 0 0;
     width: 90px;
+    height: 40px;
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.shop_card-botao:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 /*#region Banner*/
