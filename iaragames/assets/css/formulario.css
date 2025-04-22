@@ -39,6 +39,8 @@ form {
     gap: 15px;
 }
 
+
+
 .grupo .campo {
     flex: 10px;
     min-width: 250px;
@@ -67,21 +69,23 @@ textarea {
 }
 
 #check {
-    margin-bottom: 15px;
+    margin: 35px 0 5px 0;
+}
+
+#check div {
     display: flex;
-    flex-direction: column;
+    margin: 0 0 10px 10px;
 }
 
 #check label {
-    display: block;
-    margin-bottom: 10px;
     cursor: pointer;
+    margin-left: 8px;
 }
 
 #check input[type="radio"],
 #check input[type="checkbox"] {
     accent-color: #f4a300; 
-    margin-right: 50px;
+    margin-right: 8px;
     transform: scale(1.1); 
 }
 
