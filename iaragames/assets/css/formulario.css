@@ -30,7 +30,7 @@ form {
     justify-content: space-between;
 }
 
-fieldset.grupo {
+.grupo {
     border: none;
     margin-bottom: 20px;
     padding: 0;
@@ -39,7 +39,7 @@ fieldset.grupo {
     gap: 15px;
 }
 
-fieldset.grupo .campo {
+.grupo .campo {
     flex: 10px;
     min-width: 250px;
 }
@@ -70,7 +70,6 @@ textarea {
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 #check label {
