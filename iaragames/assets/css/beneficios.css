@@ -1,0 +1,12 @@
+.conteudo {
+    max-width: 500px;
+    margin: 40px auto 0 auto;
+    transform: translateX(-45px);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.titulo {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
