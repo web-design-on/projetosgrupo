@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/recomendacoes.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/formulario.css">
+    <link rel="stylesheet" href="./assets/css/beneficios.css">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <title>Iara Games</title>
 </head>
@@ -28,109 +29,104 @@
 
     <main class="container" id="cadastro">
         <div class="campo">
-            <h1 id="titulo">CADASTRAR-SE</h1> 
-            <p id="subtitulo">Cadastre suas informações e fique por dentro das novidades</p>
+            <h1 id="titulo">CADASTRAR-SE</h1>
+            <p id="subtitulo">Cadastre suas informações e fique por dentro das novidades!</p>
         </div>
 
-        <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Benefícios | IARA Games</title>
-    <link rel="stylesheet" href="beneficios.css">
-</head>
-<body>
+        <section id="beneficios">
+            <h2 class="titulo">Benefícios para cadastrados 👇</h2>
+            <p>✔️ Acesso antecipado às promoções</p>
+            <p>✔️ Notícias em primeira mão</p>
+            <p>✔️ Participação em sorteios e eventos especiais</p>
+            <p>✔️ Fique por dentro das últimas novidades, lançamentos exclusivos e receba ofertas imperdíveis direto
+                no seu e-mail!</p>
+        </section>
 
-    <div class="conteudo">
-        <h2 class="titulo">Benefícios para cadastrados 👇</h2> 
-        <p>✔️ Acesso antecipado a promoções</p>
-        <p>✔️ Notícias em primeira mão</p>
-        <p>✔️ Participação em sorteios e eventos especiais</p>
-        <p>- Fique por dentro das últimas novidades, lançamentos exclusivos e receba ofertas imperdíveis direto no seu e-mail!</p>
-    </div>
-
-</body>
-</html>
         <form>
             <fieldset class="grupo">
                 <div class="campo">
                     <label for="nome"><strong>Nome</strong></label>
                     <input type="text" nome="nome" id="nome" required>
                 </div>
-    
+
                 <div class="campo">
                     <label for="sobrenome"><strong>Sobrenome</strong></label>
                     <input type="text" nome="sobrenome" id="sobrenome" required>
                 </div>
-        </fieldset>
-    
-        <fieldset class="grupo">
-            <div class="campo">
-                <label for="email"><strong>E-mail</strong></label>
-                <input type="email" nome="email" id="email" required>
-            </div>
-            <div class="campo">
-                <label for="whatsapp"><strong>WhatsApp</strong></label>
-                <input type="text" nome="whatsapp" id="whatsapp" required>
-            </div>
-        </fieldset>
-        
-        <div id="check">
-            <label><strong>Qual forma de contato você prefere?</strong></label><br>
-            <label>
-                <input type="radio" name="contato" value="celular" checked>Celular
-            </label>
-            <label>
-                <input type="radio" name="contato" value="email">E-mail
-            </label>
-        </div><br>
-    
-        <div class="campo">
-            <label><strong>Consoles que possui</strong></label>
-            <select id="consoles">
-                <option selected disabled value="">Selecione</option>
-                <option>PlayStation</option>
-                <option>Xbox</option>
-                <option>Nintendo Switch</option>
-            </select>
-        </div>
-    
-        <fieldset class="grupo">
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="email"><strong>E-mail</strong></label>
+                    <input type="email" nome="email" id="email" required>
+                </div>
+                <div class="campo">
+                    <label for="whatsapp"><strong>WhatsApp</strong></label>
+                    <input type="text" nome="whatsapp" id="whatsapp" required>
+                </div>
+            </fieldset>
+
             <div id="check">
-                <label><strong>Selecione os gêneros de jogos que te interessam:</strong></label>
-                <div>  <input type="checkbox" id="area1" nome="area1" value="FPS">
-                    <label for="area1">FPS</label>
-                </div>
-                <div>  <input type="checkbox" id="area2" nome="area2" value="Battle Royale">
-                    <label for="area2">Battle Royale</label>
-                </div>
-                <div>  <input type="checkbox" id="area3" nome="area3" value="MOBA">
-                    <label for="area3">MOBA</label>
-                </div>
-                <div>  <input type="checkbox" id="area4" nome="area4" value="RPG">
-                    <label for="area4">RPG</label>
-                </div>
-                <div>  <input type="checkbox" id="area5" nome="area5" value="MMORPG">
-                    <label for="area5">MMORPG</label>
-                </div>
+                <label><strong>Qual forma de contato você prefere?</strong></label>
+                <label>
+                    <input type="radio" name="contato" value="celular" checked>Celular
+                </label>
+                <label>
+                    <input type="radio" name="contato" value="email">E-mail
+                </label>
             </div>
-        </fieldset>
-    
-        <div class="campo">
-            <br>
-            <label><strong>Quer deixar um comentário?</strong></label>
-            <textarea rows="6" name="experiencia" id="experiencia"></textarea>
-        </div>
-    
-        <button class="btn btn-primary" type="submit" onsubmit="">ENVIAR</button>
-    
+
+            <div class="campo">
+                <label><strong>Qual plataforma você prefere?</strong></label>
+                <select id="plataformas">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Desktop</option>
+                    <option>Mobile</option>
+                    <option>Console</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione os gêneros de jogos que te interessam:</strong></label>
+                    <div> 
+                        <input type="checkbox" id="area1" nome="area1" value="FPS">
+                        <label for="area1" class="checkbox-label">FPS</label>
+                    </div>
+                    <div> 
+                        <input type="checkbox" id="area2" nome="area2" value="Battle Royale">
+                        <label for="area2" class="checkbox-label">Battle Royale</label>
+                    </div>
+                    <div> 
+                        <input type="checkbox" id="area3" nome="area3" value="MOBA">
+                        <label for="area3" class="checkbox-label">MOBA</label>
+                    </div>
+                    <div> 
+                        <input type="checkbox" id="area4" nome="area4" value="RPG">
+                        <label for="area4" class="checkbox-label">RPG</label>
+                    </div>
+                    <div> 
+                        <input type="checkbox" id="area5" nome="area5" value="MMORPG">
+                        <label for="area5" class="checkbox-label">MMORPG</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label><strong>Quer deixar um comentário?</strong></label>
+                <textarea rows="6" name="experiencia" id="experiencia"></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit" onsubmit="">ENVIAR</button>
+
         </form>
-       
+
         </section>
     </main>
 
     <footer class="rodape" role="contentinfo" aria-label="Rodapé da Iara Games">
         <img class="rodape_logo" src="./assets/img/logo.png" alt="Logo da Iara Games">
-    
+
         <ul class="lista-rodape" aria-label="Links da Loja">
             <li class="lista-rodape__titulo">Loja</li>
             <li class="lista-rodape__item">
@@ -140,7 +136,7 @@
                 <a href="#" class="lista-rodape__link">Novos lançamentos</a>
             </li>
         </ul>
-    
+
         <ul class="lista-rodape" aria-label="Jogos disponíveis">
             <li class="lista-rodape__titulo">Jogos</li>
             <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">No Place for Bravery</a></li>
@@ -150,7 +146,7 @@
             <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Dandara</a></li>
             <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Out There Somewhere</a></li>
         </ul>
-    
+
         <ul class="lista-rodape" aria-label="Redes sociais da empresa">
             <li class="lista-rodape__titulo">Sociais</li>
             <li class="lista-rodape__item redes-sociais">
@@ -172,5 +168,6 @@
             </li>
         </ul>
     </footer>
-    </body>
+</body>
+
 </html>

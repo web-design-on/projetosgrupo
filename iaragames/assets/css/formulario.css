@@ -1,11 +1,8 @@
 #cadastro {
     .btn {
-        width: 100%;
+        width: 200px;
+        margin-left: auto;
     }
-}
-
-.campo {
-    margin-bottom: 20px;
 }
 
 #titulo {
@@ -22,24 +19,23 @@
 }
 
 form {
-    max-width: 600px;
-    margin: 40px auto;
+    max-width: 800px;
+    margin: 32px auto 0;
     background-color: #182534;
-    padding: 20px 30px;
-    border-radius: 10px;
-    justify-content: space-between;
+    padding: 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .grupo {
     border: none;
-    margin-bottom: 20px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 16px;
 }
-
-
 
 .grupo .campo {
     flex: 10px;
@@ -47,10 +43,12 @@ form {
 }
 
 label {
-    font-size: 15px;
+    font-size: 14px;
     display: block;
-    margin-bottom: 15px;
-    font-weight: bold;
+
+    &:not(.checkbox-label) {
+        margin-bottom: 16px;
+    }
 }
 
 input[type="text"],
@@ -59,17 +57,12 @@ select,
 svg,
 textarea {
     width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
+    padding: 12px;
+    border-radius: 4px;
     background-color: #243b55;
     color: #f0f0f0;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     border: 2px solid #243b55;   
-}
-
-#check {
-    margin: 35px 0 5px 0;
 }
 
 #check div {
@@ -84,7 +77,7 @@ textarea {
 
 #check input[type="radio"],
 #check input[type="checkbox"] {
-    accent-color: #f4a300; 
+    accent-color: var(--cor-destaque); 
     margin-right: 8px;
     transform: scale(1.1); 
 }
@@ -92,7 +85,7 @@ textarea {
 #experiencia {
     width: 100%;               
     height: auto;              
-    font-size: 15px;           
+    font-size: 14px;           
     border: 2px solid #243b55;    
     border-radius: 8px;        
     resize: vertical;          
@@ -111,4 +104,12 @@ textarea {
 
 button.botao:hover {
     background-color: #08695F;
+}
+
+@media screen and (max-width: 575px) {
+    #cadastro {
+        .btn {
+            width: 100%;
+        }
+    }
 }

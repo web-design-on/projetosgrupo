@@ -34,8 +34,9 @@ h2 {
 }
 
 .container {
-    padding: 16px 12%;
+    padding: 16px 32px;
     margin: auto auto 32px;
+    max-width: 1200px;
 }
 
 /*#region Botões*/
@@ -79,8 +80,8 @@ h2 {
 }
 /*#endregion Botões*/
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
     .container {
-        padding: 16px 8%;
+        padding: 16px;
     }
 }
