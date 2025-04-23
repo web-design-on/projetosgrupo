@@ -55,3 +55,23 @@
     margin-bottom: 20px;
     line-height: 1.5;
 }
+
+@media screen and (max-width: 768px) {
+    .container_header {
+        flex-direction: column;   
+        align-items: unset;
+        
+        .logo {
+            margin: auto;
+        }
+    }
+
+    .container_header_home {
+        flex-direction: unset;        
+        align-items: center;
+
+        .navbar_header {
+            flex-direction: column;   
+        }
+    }
+}
