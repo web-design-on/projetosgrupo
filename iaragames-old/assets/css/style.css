@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cor-principal: #15193E;
+    --cor-principal-hover: #00042b;
+    --cor-secundaria: #08695F;
+    --cor-destaque: #FAA836;
+    --cor-fundo: #0b1929;
+    --gradiente: linear-gradient(160deg,rgba(11, 25, 41, 1) 0%, rgba(3, 11, 20, 1) 100%);
+    --fonte-titulo: "Doppio One", sans-serif;
+    --fonte-conteudo: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-conteudo);
+    color: white;
+}
+
+main {
+    background-color:linear-gradient(160deg,rgba(8, 12, 38, 1) 0%, rgba(10, 13, 41, 1) 100%);
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.container {
+    padding: 16px 32px;
+    margin: auto auto 32px;
+    max-width: 1200px;
+}
+
+/*#region Botões*/
+.btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--cor-destaque);
+    color: #0e1022 !important;
+    font-weight: bold;
+    border: 2px solid var(--cor-destaque);
+    transition: 0.3s;
+
+    &:is(:hover, :active, :focus) {
+        background-color: var(--cor-secundaria);
+        border: 2px solid var(--cor-secundaria);
+        color: #FFFFFF !important;
+    }
+}
+
+.btn-default {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+    max-width: 80px;
+    width: 100%;
+    min-width: 140px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+
+    &:is(:hover, :active, :focus) {
+        background-color: var(--cor-secundaria);
+        border: 2px solid var(--cor-secundaria);
+    }
+}
+/*#endregion Botões*/
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 16px;
+    }
+}
