@@ -1,0 +1,57 @@
+/*#region Banner*/
+.banner-games {
+    padding: 16px;
+    border-radius: 20px;
+    background-image: url(../img/banner.png);   
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    background-size: cover;
+    background-position: center;    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    h1 {
+        margin-bottom: 8px;
+        max-width: 432px;
+        color: #FFFFFF;
+    }
+    
+    p {
+        max-width: 432px;
+        line-height: 22px; 
+        color: #FFFFFF;
+    }
+}
+/*#endregion Banner*/
+
+.filters {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin: 24px auto 16px;
+    align-items: end;
+
+    .filter {
+        display: flex;
+        gap: 4px;
+        flex-direction: column;
+        min-width: 90px;
+        
+        select {
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .filters {
+        flex-direction: column;
+
+        .filter, .btn {
+            max-width: unset;
+            width: 100%;
+        }
+    }
+}

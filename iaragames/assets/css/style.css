@@ -1,6 +1,55 @@
 :root {
     --cor-primaria:#24313A;
+    --cor-primaria-hover: #3E7EB6;
+    --cor-secundaria: #276D3C;
     --cor-destaque: #EEA142;
     --cor-neutra:#EEE6D0;
     --cor-verde-claro:#68A77B;
+}
+
+/*#region Fonte*/
+h1, h2, h3, h4, h5 {
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+}
+
+p, li, a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+/*#endregion Fonte*/
+
+.btn-primary {
+    background-color: var(--cor-primaria);
+    border: 3px solid var(--cor-primaria);
+    color: #FFFFFF;
+    max-width: 80px;
+    width: 100%;
+    min-width: 140px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+
+    &:is(:hover, :active, :focus) {
+        background-color: var(--cor-primaria-hover);
+        border: 3px solid  var(--cor-primaria-hover);
+    }
+}
+
+.btn-secondary {
+    background-color: #19875417;
+    border: 3px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    max-width: 80px;
+    width: 100%;
+    min-width: 140px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+
+    &:is(:hover, :active, :focus) {
+        background-color: var(--cor-secundaria);
+        border: 3px solid var(--cor-secundaria);
+        color: #FFFFFF;
+    }
 }

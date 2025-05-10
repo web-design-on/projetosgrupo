@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/./style.css">
-    <link rel="stylesheet" href="./assets/css/./footer.css">
-    <link rel="stylesheet" href="./assets/css/./menu.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/cards.css">
-    <title>Iara Games - Jogos</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/./style.css">
+        <link rel="stylesheet" href="./assets/css/./footer.css">
+        <link rel="stylesheet" href="./assets/css/./menu.css">
+        <link rel="stylesheet" href="./assets/css/cards.css">
+        <link rel="stylesheet" href="./assets/css/catalog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>Iara Games - Jogos</title>
+    </head>
+
 <body>
     <header class="navbar_container ">
         <nav class="navbar navbar-expand-md  ">
@@ -48,10 +49,44 @@
 
     </header>
 
-    <main class="container">
-        <section class="shop my-5" id="shop">
+    <main class="container my-5">
+        <section class="banner-games">     
+            <h1>Novos jogos, novas experiências!</h1>
+            <p>Prepare-se para aventuras épicas, desafios emocionantes e gráficos que vão te deixar de queixo caído. Dos grandes lançamentos aos títulos indie mais surpreendentes, cada jogo é uma nova chance de se emocionar, se divertir e se conectar com algo extraordinário.</p>
+        </section>
 
-            <div class="d-flex flex-wrap justify-content-center gap-4">
+        <section class="filters" id="filters">
+            <div class="filter">
+                <label for="price" class="form-label">Preço</label>
+                <select id="price" class="form-select">
+                    <option value="todos">Todos</option>
+                    <option value="baixo">Até R$30,00</option>
+                    <option value="medio">Entre R$31,00 e R$60,00</option>
+                    <option value="alto">A partir de R$61,00</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="platform" class="form-label">Plataforma</label>
+                <select id="platform" class="form-select">
+                    <option value="todas">Todas</option>
+                    <option value="console">Console</option>
+                    <option value="desktop">Desktop</option>
+                    <option value="mobile">Mobile</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="mode" class="form-label">Modo</label>
+                <select id="mode" class="form-select">
+                    <option value="todos">Todos</option>
+                    <option value="online">Online</option>
+                    <option value="offline">Offline</option>
+                </select>
+            </div>
+            <button id="filterBtn" class="btn btn-secondary">Filtrar</button>
+        </section>
+
+        <section class="shop my-5" id="shop">
+            <div class="d-flex flex-wrap justify-content-center gap-4" data-price="alto" data-platform="console" data-mode="offline">
                 <div class="card border-0" style="width: 18rem;">
                     <img src="./assets/img/cards/deathbound.png" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
@@ -64,7 +99,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-price="alto" data-platform="console" data-mode="online">
                     <img src="./assets/img/cards/diesellegacy.png" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">DIESEL LEGACY</h5>
@@ -76,7 +111,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-price="medio" data-platform="console" data-mode="offline">
                     <img src="./assets/img/cards/mars2120.png" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">MARS 2120</h5>
@@ -88,7 +123,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-price="alto" data-platform="console" data-mode="offline">
                     <img src="./assets/img/cards/momodora.png" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">MOMODORA</h5>
@@ -100,7 +135,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-price="medio" data-platform="desktop" data-mode="offline">
                     <img src="./assets/img/cards/mulletmadjack.png" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">MULLET MADJACK</h5>
@@ -112,7 +147,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-price="baixo" data-platform="console mobile" data-mode="offline">
                     <img src="./assets/img/cards/dandara.png" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">DANDARA</h5>
@@ -124,7 +159,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-price="baixo" data-platform="console desktop" data-mode="offline">
                     <img src="./assets/img/cards/blazingchrome.png" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">BLAZING CHROME</h5>
@@ -136,7 +171,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-price="alto" data-platform="console desktop" data-mode="offline">
                     <img src="./assets/img/cards/horizonchase.png" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">HORIZON CHASE TURBO</h5>
@@ -148,7 +183,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-price="baixo" data-platform="desktop console" data-mode="offline">
                     <img src="./assets/img/cards/chromasquad.png" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">CHROMA SQUAD</h5>
@@ -160,7 +195,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-price="baixo" data-platform="mobile console" data-mode="offline">
                     <img src="./assets/img/cards/starlitadventures.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">STARLIT ADVENTURES</h5>
@@ -172,7 +207,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-price="medio" data-platform="desktop" data-mode="offline">
                     <img src="./assets/img/cards/unsighted.png" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">UNSIGHTED</h5>
@@ -184,7 +219,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-price="medio" data-platform="desktop" data-mode="offline">
                     <img src="./assets/img/cards/noplaceforbravery.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">NO PLACE FOR BRAVERY</h5>
@@ -196,7 +231,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-platform="desktop console" data-mode="offline">
                     <img src="./assets/img/cards/fobia.png" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">FOBIA: ST. DINFNA HOTEL</h5>
@@ -208,7 +243,7 @@
                     </div>
                 </div>
 
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;" data-platform="mobile desktop console" data-mode="offline">
                     <img src="./assets/img/cards/knightsofpenandpaper.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-start text-light rounded-bottom-3">
                         <h5 class="card-text font-viga fs-4">KNIGHTS OF PEN AND PAPER</h5>
@@ -226,5 +261,6 @@
     <footer></footer>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/filter.js"></script>
 </body>
 </html>
