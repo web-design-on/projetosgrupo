@@ -8,12 +8,3 @@
 .nav_icon{
     width: 100px;
 }
-
-.btn:hover {
-    color: var(--cor-destaque);
-    padding: 6px 12px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 12px var(--cor-destaque);
-    outline: 2px solid var(--cor-destaque);
-} 
-
