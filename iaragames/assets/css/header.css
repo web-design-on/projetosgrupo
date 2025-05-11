@@ -1,0 +1,33 @@
+.container_header_home {
+    background: url(../img/header/Banner_header.png) no-repeat  ;
+    position: relative;
+}
+
+.header-content {
+    max-width: 500px;
+    margin: 32px 16px 0;
+}
+
+.texto_header_maior {
+    color: var(--cor-secundaria);
+}
+
+.bnt-header {
+    background-color: var(--cor-secundaria);
+    border: 3px solid var(--cor-secundaria);
+    color: var(--cor-neutra);
+    min-width: 140px;
+
+    &:is(:hover, :active, :focus) {
+        background-color: var(--cor-verde-claro);
+        border: 3px solid var(--cor-verde-claro);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container_header_home {
+        background-image: url(../img/header/Banner_responsivo.png);
+        background-size: cover; /* ou outro ajuste que funcione bem no mobile */
+        background-position: center top;
+    }
+}
