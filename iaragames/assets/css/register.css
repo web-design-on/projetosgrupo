@@ -1,0 +1,7 @@
+.register {
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 24px 12px;
+    background-color: #FFFFFF;
+    margin: unset;
+}

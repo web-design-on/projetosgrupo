@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/./style.css">
-    <link rel="stylesheet" href="./assets/css/./footer.css">
-    <link rel="stylesheet" href="./assets/css/./menu.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Iara Games - Cadastre-se</title>
 </head>
+
 <body>
     <header class="navbar_container ">
         <nav class="navbar navbar-expand-md  ">
@@ -34,6 +39,9 @@
                         <li class="nav-item">
                             <a class="nav-link btn text-black" href="catalog.html">Jogos</a>
                         </li>
+                        <li class="nav-item">
+                            <a class=" nav-link btn text-black" href="register.html">Cadastrar-se</a>
+                        </li>
                         <a href="#" class="nav-item btn " aria-label="usuario">
                             <img src="./assets/img/menu/user--avatar 1.svg" alt="usuario" width="49" height="29"
                                 color="">
@@ -44,10 +52,64 @@
 
     </header>
 
-    <main class="container"></main>
+    <main class="container my-5">
+        <form class="row register">
+            <div class="mb-3 col-md-5">
+                <label for="name" class="form-label">Nome completo:</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3 col-md-5">
+                <label for="email" class="form-label">Endereço de email:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3 col-md-2">
+                <label for="nickName" class="form-label">Nome de usuário:</label>
+                <input type="text" class="form-control" id="nickName">
+            </div>
+            <div class="mb-3 col-md-4">
+                <label for="phone1" class="form-label">Celular:</label>
+                <input type="tel" class="form-control" id="phone1">
+            </div>
+            <div class="mb-3 col-md-4">
+                <label for="phone2" class="form-label">Telefone:</label>
+                <input type="tel" class="form-control" id="phone2">
+            </div>
+            <div class="mb-3 col-md-4">
+                <label for="birthDate" class="form-label">Data de nascimento:</label>
+                <input type="date" class="form-control" id="birthDate">
+            </div>
+            <div class="mb-3 col-md-6">
+                <label for="password" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div class="mb-3 col-md-6">
+                <label for="passwordConfirm" class="form-label">Confirme sua senha:</label>
+                <input type="password" class="form-control" id="passwordConfirm">
+            </div>
+            <div class="col-12">
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="terms">
+                    <label class="form-check-label" for="terms">
+                        Li e aceito os <a href="#">termos e condições</a>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="optIn">
+                    <label class="form-check-label" for="optIn">
+                        Aceito receber comunicações sobre as novidades da plataforma
+                    </label>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </form>
+    </main>
 
     <footer></footer>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

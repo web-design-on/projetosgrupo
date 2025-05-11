@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5 {
     font-weight: 400;
 }
 
-p, li, a {
+p, li, a, label {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
