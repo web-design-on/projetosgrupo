@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header class="navbar_container ">
+    <header class="header">
         <nav class="navbar navbar-expand-md  ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -34,18 +34,18 @@
                 <div class="collapse navbar-collapse" id="navbarIara">
                     <ul class="navbar-nav ms-auto gap-5">
                         <li class="nav-item">
-                            <a class="nav-link btn text-black" href="index.html">Página inicial</a>
+                            <a class="nav-link btn text-black text-start mt-4 my-md-0" href="index.html">Página
+                                inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn text-black" href="catalog.html">Jogos</a>
+                            <a class="nav-link btn text-black text-start " href="catalog.html">Jogos</a>
                         </li>
                         <li class="nav-item">
-                            <a class=" nav-link btn text-black" href="register.html">Cadastrar-se</a>
+                            <a class=" nav-link btn text-black text-start" href="register.html">Cadastrar-se</a>
                         </li>
-                        <a href="#" class="nav-item btn " aria-label="usuario">
-                            <img src="./assets/img/menu/user--avatar 1.svg" alt="usuario" width="49" height="29"
-                                color="">
-                        </a>
+                        <li class="nav-item">
+                            <a class=" nav-link btn text-black text-start mb-4 my-md-0" href="#">Contato</a>
+                        </li>
                 </div>
             </div>
         </nav>
@@ -107,7 +107,63 @@
         </form>
     </main>
 
-    <footer></footer>
+    <footer class="footer py-4" role="contentinfo" aria-label="Rodapé da Iara Games">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-12 col-md-3 mb-4 mb-md-0  ">
+                    <img class="footer_logo img-fluid " src="./assets/img/logo.png" alt="Logo da Iara Games">
+                </div>
+                <div class="col-12 col-md-2 mb-4 mb-md-0">
+                    <h5 class="footer__titulo text-capitalize text-center text-md-start">Sobre</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Política de reembolso</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Política de privacidade</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Termos de uso</a></li>
+                    </ul>
+                </div>
+                <hr class="d-block d-md-none border-white">
+                <div class="col-12 col-md-2 mb-4 mb-md-0">
+                    <h5 class="footer__titulo text-capitalize text-center text-md-start">Loja</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Ofertas e promoções</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Novos lançamentos</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2 mb-4 mb-md-0 d-none d-md-block">
+                    <h5 class="footer__titulo text-capitalize text-start ">Jogos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">No Place for Bravery</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Fobia – St. Dinfna Hotel</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Kukoos: Lost Pets</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Chroma Squad</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Dandara</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Out There Somewhere</a></li>
+                    </ul>
+                </div>
+                <hr class="d-block d-md-none border-white ">
+                <div class="col-12 col-md-2 text-center">
+                    <h5 class="footer__titulo text-capitalize text-center text-md-start">Sociais</h5>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="#" class="text-white  d-flex align-items-center gap-1">
+                            <img src="./assets/img/footer/whatsApp.svg" alt="Logo do WhatsApp" width="24" height="24">
+                        </a>
+                        <a href="#" class="text-white d-flex align-items-center gap-1">
+                            <img src="./assets/img/footer/fecebook.svg" alt="Logo do Facebook" width="24" height="24">
+                        </a>
+                        <a href="#" class="text-white  d-flex align-items-center gap-1">
+                            <img src="./assets/img/footer/telefone.svg" alt="Ícone de telefone" width="24" height="24">
+                        </a>
+                        <a href="#" class="text-white  d-flex align-items-center gap-1">
+                            <img src="./assets/img/footer/discord.svg" alt="Logo do Discord" width="24" height="24">
+                        </a>
+                        <a href="#" class="text-white  d-flex align-items-center gap-1">
+                            <img src="./assets/img/footer/instagram.svg" alt="Logo do Instagram" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
