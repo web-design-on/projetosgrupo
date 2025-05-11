@@ -1,0 +1,42 @@
+
+
+.card-recomendacoes {
+  background-color: #263238;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-recomendacao {
+  color: #FFA726;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.texto-recomendacao {
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.link-recomendacao {
+  color: #81C784;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.imagem-jogo {
+  width: 80px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.imagem-jogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
