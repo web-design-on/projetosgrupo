@@ -6,6 +6,9 @@
     --cor-neutra:#EEE6D0;
     --cor-verde-claro:#68A77B;
 }
+body {
+    background-color: var(--cor-neutra);
+}
 
 /*#region Fonte*/
 h1, h2, h3, h4, h5 {
