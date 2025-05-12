@@ -27,7 +27,7 @@
 @media screen and (max-width: 800px) {
     .container_header_home {
         background-image: url(../img/header/Banner_responsivo.png);
-        background-size: cover; /* ou outro ajuste que funcione bem no mobile */
+        background-size: cover;
         background-position: center top;
     }
 }
