@@ -40,3 +40,86 @@
   object-position: center;
   display: block;
 }
+/* Estilos gerais para o contêiner */
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para a linha de fundo */
+.row {
+  background-color: #24313A; /* Cor de fundo personalizada */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 20px;
+}
+
+/* Estilo para o texto da coluna esquerda */
+.col-md-8 {
+  color: #ffffff; /* Cor do texto */
+}
+
+.col-md-8 h5 {
+  color: #ffc107; /* Cor do título (amarelo) */
+  font-weight: bold;
+}
+
+.col-md-8 p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.col-md-8 a {
+  color: #28a745; /* Cor do link */
+  font-weight: 600;
+  text-decoration: none; /* Remove sublinhado */
+}
+
+.col-md-8 a:hover {
+  text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+/* Estilo para as imagens à direita */
+.col-md-4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px; /* Espaçamento entre as imagens */
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.img-container img {
+  width: 100%; /* Garante que as imagens ocupem toda a largura do contêiner */
+  height: auto;
+  border-radius: 8px; /* Bordas arredondadas para as imagens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra nas imagens */
+}
+
+/* Estilo para links quando estão em hover */
+.col-md-8 a:hover {
+  color: #218838; /* Muda a cor do link ao passar o mouse */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .col-md-8, .col-md-4 {
+    text-align: center;
+  }
+
+  .col-md-4 {
+    margin-top: 20px;
+  }
+
+  .col-md-8 h5 {
+    font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .col-md-8 p {
+    font-size: 14px;
+  }
+}
