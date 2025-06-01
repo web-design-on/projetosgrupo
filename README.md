@@ -8,3 +8,4 @@
 
 ## 💻 Projetos
 - https://web-design-on.github.io/projetosgrupo/iaragames/
+- https://web-design-on.github.io/projetosgrupo/globalsolutions/
