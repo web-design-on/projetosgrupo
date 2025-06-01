@@ -1,9 +1,13 @@
+## 📄 Sobre
+<p>Repositório destinado ao armazenamento dos projetos desenvolvidos em grupo para as atividades avaliativas do curso de Web Design - EAD.</p>
+</br>
+
 ## 🧑‍💻 Equipe
-- Natali Schers
-- Pedro Edgard Agostini Fernandes
-- Rebeca Luiza Soares Cerqueira
-- Sarah Raquel Soares Maranhão
-- Stephanie da Silva Cruz
+- <a href="https://github.com/natali-schers">Natali Schers</a>
+- <a href="https://github.com/Pedroedgard">Pedro Edgard Agostini Fernandes</a>
+- <a href="https://github.com/Rebeca-Soares">Rebeca Luiza Soares Cerqueira</a>
+- <a href="https://github.com/smaranha">Sarah Raquel Soares Maranhão</a>
+- <a href="https://github.com/Web-D-on">Stephanie da Silva Cruz</a>
 </br>
 
 ## 💻 Projetos
