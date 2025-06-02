@@ -1,0 +1,43 @@
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #003f3c;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-control,
+.form-select {
+    border: 2px solid #1b3b3c;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.form-footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.input-group-text {
+    background-color: white;
+    border: none;
+}
