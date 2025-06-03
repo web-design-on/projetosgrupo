@@ -144,3 +144,31 @@ header {
 }
 
 /*#endregion Header*/
+
+/*#region Newsletter*/
+.newsletter {
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+
+    input {
+        border-radius: 50px;
+        border: 2px solid var(--neutral-color);
+        background: transparent;
+        color: var(--neutral-color);
+        max-width: 40rem;
+
+        &::placeholder {
+            color: var(--neutral-color);
+            opacity: 0.75;
+        }
+
+        &:focus {
+            background: transparent;
+            color: var(--neutral-color);
+                border-color: var(--highlight-color);
+                box-shadow: 0 0 0 .2rem #dc354550
+        }
+    }
+}
+
+/*#endregion Newsletter*/
