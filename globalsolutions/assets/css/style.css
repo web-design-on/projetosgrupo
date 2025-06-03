@@ -12,7 +12,7 @@
 
 /*#region Configurações gerais*/
 body {
-      font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -34,6 +34,7 @@ h4 {
     font-size: 1.75rem;
     font-weight: 800;
 }
+
 /*#endregion Configurações gerais*/
 
 /*#region Botões*/
@@ -53,16 +54,93 @@ h4 {
     }
 }
 
+.btn-secondary {
+    color: var(--primary-color);
+    font-weight: 500;
+    border: 1px solid var(--primary-color);
+    padding: 8px 24px;
+
+    &:is(:hover, :focus, :active) {
+        background-color: var(--primary-color);
+        color: var(--neutral-color);
+    }
+}
+
 .btn-highlight {
     background-color: var(--btn-highlight-background);
     color: var(--neutral-color);
     font-weight: 500;
     border: none;
-     padding: 8px 24px;
+    padding: 8px 24px;
 
     &:is(:hover, :focus, :active) {
         color: var(--neutral-color);
         background-color: var(--btn-highlight-hover);
     }
 }
+
 /*#endregion Botões*/
+
+/*#region Header*/
+header {
+    background-color: var(--neutral-color);
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .search-bar {
+        input {
+            border-radius: 50px 0 0 50px;
+            border: 1px solid var(--primary-color);
+            border-right: none;
+
+            &:focus {
+                border-color: unset;
+                outline: 0;
+                box-shadow: unset;
+            }
+        }
+
+        button {
+            border-radius: 0 50px 50px 0;
+            border: 1px solid var(--primary-color);
+            border-left: navajowhite;
+            background-color: var(--bs-body-bg);
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        .navbar .container-fluid {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        .navbar {
+            min-height: 80px;
+
+            .nav-link {
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 65%;
+                    margin: 6px auto 0;
+                    transition-timing-function: linear;
+                    transition-duration: 0.3s;
+                }
+            }
+
+            .nav-link:is(:hover)::after {
+                background-color: var(--primary-color);
+            }
+        }
+    }
+}
+
+/*#endregion Header*/
