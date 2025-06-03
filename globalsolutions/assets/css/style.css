@@ -34,7 +34,6 @@ h4 {
     font-size: 1.75rem;
     font-weight: 800;
 }
-
 /*#endregion Configurações gerais*/
 
 /*#region Botões*/
@@ -172,3 +171,18 @@ header {
 }
 
 /*#endregion Newsletter*/
+
+/*#region Footer*/
+footer {
+    background-color: var(--neutral-color);
+    color: var(--primary-color);
+
+    a {
+        color: var(--primary-color);
+
+        &:is(:hover, :focus, :active) {
+            color: var(--highlight-color);
+        }
+    }
+}
+/*#endregion Footer*/
