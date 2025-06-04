@@ -6,13 +6,31 @@
     --border-radius: 24px;
     --btn-highlight-background: #B93800;
     --btn-highlight-hover: #992f02;
-    --btn-primary-background: rgba(24, 66, 75, 0.75);
-    --btn-primary-hover: #18424B;
+    --btn-primary-background: #18424B;
+    --btn-primary-hover: #14363d;
+    --body-darkmode-background: #383838;
+    --header-footer-darkmode-background: #282828;
 }
 
 /*#region Configurações gerais*/
 body {
     font-family: "Poppins", sans-serif;
+
+    &.darkmode {
+        background-color: var(--body-darkmode-background);
+        color: var(--neutral-color);
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: var(--neutral-color) !important;
+        }
+
+        .btn:not(.newsletter .btn, header .btn) {
+            border: 1px solid var(--neutral-color);
+        }
+    }
 }
 
 h1 {
@@ -34,19 +52,20 @@ h4 {
     font-size: 1.75rem;
     font-weight: 800;
 }
+
 /*#endregion Configurações gerais*/
 
 /*#region Botões*/
 .btn {
     border-radius: var(--border-radius);
+    border: none;
+    padding: 8px 24px;
 }
 
 .btn-primary {
     background-color: var(--btn-primary-background);
     color: var(--neutral-color);
     font-weight: 800;
-    border: none;
-    padding: 8px 24px;
 
     &:is(:hover, :focus, :active) {
         background-color: var(--btn-primary-hover);
@@ -57,7 +76,6 @@ h4 {
     color: var(--primary-color);
     font-weight: 500;
     border: 1px solid var(--primary-color);
-    padding: 8px 24px;
 
     &:is(:hover, :focus, :active) {
         background-color: var(--primary-color);
@@ -69,8 +87,6 @@ h4 {
     background-color: var(--btn-highlight-background);
     color: var(--neutral-color);
     font-weight: 500;
-    border: none;
-    padding: 8px 24px;
 
     &:is(:hover, :focus, :active) {
         color: var(--neutral-color);
@@ -86,6 +102,10 @@ header {
 
     .navbar-toggler:focus {
         box-shadow: none;
+    }
+
+    .btn-theme {
+        padding: 8px 13px;
     }
 
     .search-bar {
@@ -107,6 +127,26 @@ header {
             border-left: navajowhite;
             background-color: var(--bs-body-bg);
         }
+    }
+
+    .navbar-brand img {
+        width: 80px;
+    }
+}
+
+.darkmode header {
+    background-color: var(--header-footer-darkmode-background);
+
+    .navbar-toggler {
+        border-color: var(--neutral-color);
+
+        span {
+            filter: invert(1) brightness(10);
+        }
+    }
+
+    .navbar .nav-link {
+        color: var(--neutral-color);
     }
 }
 
@@ -140,6 +180,14 @@ header {
             }
         }
     }
+
+    .darkmode header {
+        .navbar .nav-link {
+            &:is(:hover)::after {
+                background-color: var(--neutral-color);
+            }
+        }
+    }
 }
 
 /*#endregion Header*/
@@ -164,8 +212,8 @@ header {
         &:focus {
             background: transparent;
             color: var(--neutral-color);
-                border-color: var(--highlight-color);
-                box-shadow: 0 0 0 .2rem #dc354550
+            border-color: var(--highlight-color);
+            box-shadow: 0 0 0 .2rem #dc354550
         }
     }
 }
@@ -185,4 +233,18 @@ footer {
         }
     }
 }
+
+.darkmode footer {
+    background-color: var(--header-footer-darkmode-background);
+    color: var(--neutral-color);
+
+    a {
+        color: var(--neutral-color);
+
+        &:is(:hover, :focus, :active) {
+            color: var(--highlight-color);
+        }
+    }
+}
+
 /*#endregion Footer*/

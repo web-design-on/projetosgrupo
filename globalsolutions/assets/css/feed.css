@@ -18,13 +18,14 @@
             .name {
                 font-weight: 700;
                 font-size: 1.2rem;
-                line-height: 1.2rem;
+                line-height: 1.4rem;
             }
 
             .location {
                 font-weight: 400;
                 color: var(--highlight-color);
-             }
+                font-size: 0.8rem;
+            }
 
             img {
                 width: 100%;
@@ -40,6 +41,18 @@
 
         .btn-primary {
             font-weight: normal;
+        }
+    }
+}
+
+.darkmode {
+    .feed .card {
+        background: #282828;
+        color: var(--neutral-color);
+        border: 1px solid var(--neutral-color);
+
+        .location {
+            color: var(--neutral-color);
         }
     }
 }
