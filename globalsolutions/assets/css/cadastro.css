@@ -1,0 +1,71 @@
+.form-cadastro {
+    color: var(--primary-color);
+}
+
+.img-ilustracao {
+    width: 3000px;
+    /* aumenta a largura para 300px */
+    height: auto;
+    /* mantém proporção */
+}
+
+.cadastro-caixas {
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.input-label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.texto-caixa {
+    font-size: 0.8rem;
+}
+
+.cadastro-box {
+    height: auto;
+}
+
+
+.darkmode {
+    .input-label {
+        position: absolute;
+        top: -10px;
+        left: 15px;
+        background-color: transparent;
+        color: #f9f6f6;
+        padding: 0 5px;
+        font-size: 0.9rem;
+    }
+
+    .texto-caixa {
+        background-color: #2828282d;
+        border: solid #28282835;
+        color: hsl(0, 1%, 42%);
+    }
+
+    .texto-caixa::placeholder {
+        color: hsl(0, 1%, 42%);
+    }
+
+    .social {
+        color: white;
+    }
+
+    .text-white-custom {
+        color: white;
+    }
+}
+
+@media (max-width: 1008px) {
+    .cadastro-caixas .row>div {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
