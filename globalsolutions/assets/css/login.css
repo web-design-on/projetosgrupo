@@ -1,0 +1,13 @@
+.forgot-password a{
+    text-decoration: none;
+}
+
+.submit-cadastro {
+    text-decoration: none;
+    font-weight: 450;
+}
+
+.icon-input {
+    color: var(--primary-color);
+}
+
