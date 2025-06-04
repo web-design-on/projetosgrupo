@@ -39,5 +39,6 @@
 
 .input-group-text {
     background-color:var(--neutral-color);
-    border: none;
+    border:none;
+    border: 2px solid  var( --primary-color);
 }

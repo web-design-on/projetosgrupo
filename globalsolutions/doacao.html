@@ -50,88 +50,102 @@
     </header>
 
     <main>
-        <div class="form-container">
-            <div class="text-center mb-4">
-                <img src="./assets/img/Humanitarian Help-cuate-2 2.svg"
-                    alt="Imagem de um homem ajuando uma mulher a pegar caixas" class="img-fluid">
-            </div>
-
-            <h2 class="form-title">Quero ajudar!</h2>
-            <div class="form-section">
-                <form>
-                    <div class="row g-3">
-                        <div class="col-md-4">
-                            <label class="form-label">Empresa *</label>
-                            <input type="text" class="form-control" placeholder="Nome">
-                        </div>
-                        <div class="col-md-4">
-                            <label class="form-label">CNPJ *</label>
-                            <input type="text" class="form-control" placeholder="Apenas números">
-                        </div>
-                        <div class="col-md-4">
-                            <label class="form-label">E-mail *</label>
-                            <div class="input-group">
-                                <input type="email" class="form-control" placeholder="emailempresarial@gmail.com">
-                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label">Estado</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
-                                <select class="form-select">
-                                    <option selected>Selecione seu estado</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label">Cidade</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
-                                <select class="form-select">
-                                    <option selected>Selecione sua cidade</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label">Data da doação</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="DD / MM / AAAA">
-                                <span class="input-group-text"><i class="bi bi-calendar-event"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label">Unidade</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
-                                <select class="form-select">
-                                    <option selected>Selecione uma unidade</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <label class="form-label">O que será doado</label>
-                            <input type="text" class="form-control"
-                                placeholder="Papel higiênico, alimentos perecíveis...">
-                        </div>
-
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary ">Enviar</button>
-                        </div>
-
-                        <div class="form-footer">
-                            <p>Obrigado pela sua doação,<br>entraremos em contato em breve!</p>
-                        </div>
-                    </div>
-                </form>
-            </div>
+    <div class="form-container container py-5">
+        <div class="text-center mb-4">
+            <img src="./assets/img/Humanitarian Help-cuate-2 2.svg"
+                alt="Imagem de um homem ajudando uma mulher a pegar caixas" class="img-fluid">
         </div>
-    </main>
+
+        <h2 class="form-title text-center mb-4">Quero ajudar!</h2>
+        
+        <form novalidate>
+            <div class="row g-3">
+
+                <div class="col-md-4">
+                    <label for="empresa" class="form-label">Empresa *</label>
+                    <input type="text" id="empresa" class="form-control" placeholder="Nome" required>
+                    <div class="invalid-feedback">Informe o nome da empresa.</div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="cnpj" class="form-label">CNPJ *</label>
+                    <input type="text" id="cnpj" class="form-control" placeholder="Apenas números" required>
+                    <div class="invalid-feedback">Informe um CNPJ válido.</div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="email" class="form-label">E-mail *</label>
+                    <div class="input-group">
+                        <input type="email" id="email" class="form-control" placeholder="emailempresarial@gmail.com" required>
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        <div class="invalid-feedback">Informe um e-mail válido.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="estado" class="form-label">Estado *</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+                        <select id="estado" class="form-select" required>
+                            <option value="">Selecione seu estado</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <!-- outros estados -->
+                        </select>
+                        <div class="invalid-feedback">Selecione um estado.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="cidade" class="form-label">Cidade *</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+                        <select id="cidade" class="form-select" required>
+                            <option value="">Selecione sua cidade</option>
+                        </select>
+                        <div class="invalid-feedback">Selecione uma cidade.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="data" class="form-label">Data da doação *</label>
+                    <div class="input-group">
+                        <input type="date" id="data" class="form-control" required>
+                        <div class="invalid-feedback">Escolha uma data.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="unidade" class="form-label">Unidade *</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+                        <select id="unidade" class="form-select" required>
+                            <option value="">Selecione uma unidade</option>
+                        </select>
+                        <div class="invalid-feedback">Selecione uma unidade.</div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="doacao" class="form-label">O que será doado *</label>
+                    <input type="text" id="doacao" class="form-control"
+                        placeholder="Papel higiênico, alimentos perecíveis..." required>
+                    <div class="invalid-feedback">Descreva os itens a serem doados.</div>
+                </div>
+
+                <div class="text-center">
+                            <button type="submit" class="btn btn-primary ">Enviar</button>
+
+                <div class="form-footer text-center mt-3">
+                    <p class="text-success fw-bold d-none" id="msg-sucesso">
+                        Obrigado pela sua doação,<br> entraremos em contato em breve!
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+
 
     <section class="mt-4 newsletter">
         <div class="container  py-5 text-center">
