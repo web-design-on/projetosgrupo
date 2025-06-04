@@ -7,6 +7,7 @@
     <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/feed.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -29,7 +30,8 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link pt-3 px-3" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link pt-3 px-3" href="mapeamento.html">Feed de Mapeamento</a></li>
+                        <li class="nav-item"><a class="nav-link pt-3 px-3" href="mapeamento.html">Feed de Mapeamento</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link pt-3 px-3" href="#">Preparar para Proteger</a></li>
                         <li class="nav-item"><a class="nav-link pt-3 px-3" href="doacao.html">Quero Ajudar!</a></li>
                         <li class="nav-item"><a class="nav-link pt-3 px-3" href="#">Login/Cadastro</a></li>
@@ -48,16 +50,12 @@
     </header>
 
     <main class="container">
-        <section class="d-flex flex-column gap-4">
-            <img src="./assets/img/cards/banner_defesa civil desktop.svg" class="img-fluid d-none d-md-block"alt="defesa civil">
-            <img src="./assets/img/cards/banner_defesa civil mobile.svg" class="img-fluid d-block d-md-none" alt="defesa civil">
-            <img src="./assets/img/cards/banner_feed de mapeamento desktop.svg" class="img-fluid d-none d-md-block"alt="feed de mapeamento">
-            <img src="./assets/img/cards/banner_doação mobile.svg" class="img-fluid d-block d-md-none" alt="feed de mapeamento">
-            <img src="./assets/img/cards/banner_prevenção desktop.svg" class="img-fluid d-none d-md-block"alt="prevenção">
-            <img src="./assets/img/cards/banner_prevenção mobile.svg" class="img-fluid d-block d-md-none" alt="cprevenção">
-            <img src="./assets/img/cards/banner_doação desktop.svg" class="img-fluid d-none d-md-block"alt="doação">
-            <img src="./assets/img/cards/banner_doação mobile.svg" class="img-fluid d-block d-md-none" alt="doação">
-            
+        <section class="container">
+            <img src="./assets/img/feed/banner_desktop.png" alt="Contribua com o mapeamento colaborativo de riscos" class="w-100 mb-4 d-none d-md-block">
+            <img src="./assets/img/feed/banner_mobile.png" alt="Contribua com o mapeamento colaborativo de riscos" class="w-100 mb-4 d-block d-md-none">
+        </section>
+
+        <section class="feed" id="feed">
         </section>
     </main>
 
@@ -83,7 +81,9 @@
         <p class="mb-0 pb-1 text-center">Direitos reservados ®</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/feed.js"></script>
 </body>
 
 </html>
