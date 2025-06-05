@@ -7,6 +7,7 @@
     <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/prepararproteger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -20,7 +21,8 @@
     <header class="mb-4">
         <nav class="navbar navbar-expand-lg pt-3 container">
             <div class="container-fluid">
-                <a class="navbar-brand m-0" href="index.html"><img id="logo" src="./assets/img/logo.svg" alt="Comunidade Nexo"></a>
+                <a class="navbar-brand m-0" href="index.html"><img id="logo" src="./assets/img/logo.svg"
+                        alt="Comunidade Nexo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +33,8 @@
                         <li class="nav-item"><a class="nav-link pt-3 px-3" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link pt-3 px-3" href="mapeamento.html">Feed de Mapeamento</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link pt-3 px-3" href="prepararproteger.html">Preparar para Proteger</a></li>
+                        <li class="nav-item"><a class="nav-link pt-3 px-3" href="prepararproteger.html">Preparar para
+                                Proteger</a></li>
                         <li class="nav-item"><a class="nav-link pt-3 px-3" href="doacao.html">Quero Ajudar!</a></li>
                         <li class="nav-item"><a class="nav-link pt-3 px-3" href="#">Login/Cadastro</a></li>
                     </ul>
@@ -46,19 +49,44 @@
             </form>
             <button class="btn btn-primary btn-theme"><i class="bi bi-moon-stars"></i></button>
         </div>
+
     </header>
 
     <main class="container">
-        <section class="d-flex flex-column gap-4">
-            <img src="./assets/img/cards/banner_defesa civil desktop.svg" class="img-fluid d-none d-md-block"alt="defesa civil">
-            <img src="./assets/img/cards/banner_defesa civil mobile.svg" class="img-fluid d-block d-md-none" alt="defesa civil">
-            <img src="./assets/img/cards/banner_feed de mapeamento desktop.svg" class="img-fluid d-none d-md-block"alt="feed de mapeamento">
-            <img src="./assets/img/cards/banner_feed de mapeamento mobile.svg" class="img-fluid d-block d-md-none" alt="feed de mapeamento">
-            <img src="./assets/img/cards/banner_prevenção desktop.svg" class="img-fluid d-none d-md-block"alt="prevenção">
-            <img src="./assets/img/cards/banner_prevenção mobile.svg" class="img-fluid d-block d-md-none" alt="cprevenção">
-            <img src="./assets/img/cards/banner_doação desktop.svg" class="img-fluid d-none d-md-block"alt="doação">
-            <img src="./assets/img/cards/banner_doação mobile.svg" class="img-fluid d-block d-md-none" alt="doação">
-            
+        <section>
+            <img src="./assets/img/prepararproteger/banner_desktop.png"
+                alt="Contribua com o mapeamento colaborativo de riscos" class="w-100 mb-4 d-none d-md-block">
+            <img src="./assets/img/prepararproteger/banner_mobile.png"
+                alt="Contribua com o mapeamento colaborativo de riscos" class="w-100 mb-4 d-block d-md-none">
+        </section>
+
+        <section class="cards-preparacao">
+            <h2 class="text-center">Prevenção salva vidas</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-4 mt-4">
+                <div class="card">
+                    <i class="bi bi-hospital-fill"></i>
+                    <p class="titulo">Primeiros Socorros</p>
+                    <p>1.746 estudantes</p>
+                </div>
+
+                <div class="card">
+                    <i class="bi bi-telephone-x-fill"></i>
+                    <p class="titulo">Contatos de emergência</p>
+                    <p>1.007 estudantes</p>
+                </div>
+
+                <div class="card">
+                    <i class="bi bi-house-heart-fill"></i>
+                    <p class="titulo">Unidades de Abrigo</p>
+                    <p>2.698 estudantes</p>
+                </div>
+
+                <div class="card">
+                    <i class="bi bi-fire"></i>
+                    <p class="titulo">Proteção Contra Incêndios</p>
+                    <p>1.976 estudantes</p>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -84,8 +112,9 @@
         <p class="mb-0 pb-1 text-center">Direitos reservados ®</p>
     </footer>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/feed.js"></script>
     <script src="./assets/js/theme.js"></script>
 </body>
 

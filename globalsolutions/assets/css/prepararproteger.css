@@ -1,0 +1,46 @@
+.cards-preparacao {
+    .card {
+        background-color: var(--neutral-color);
+        padding: 16px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        width: 100%;
+
+        i {
+            font-size: 3rem;
+        }
+
+        p {
+            margin-bottom: unset;
+        }
+
+        .titulo {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+    }
+}
+
+.darkmode {
+    .cards-preparacao {
+        .card {
+            background-color: #282828;
+            border: 1px solid var(--neutral-color);
+            color: var(--neutral-color);
+
+            .titulo {
+                color: var(--neutral-color);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cards-preparacao {
+        .card {
+            width: calc(25% - 2rem);
+        }
+    }
+}
