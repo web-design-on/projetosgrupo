@@ -1,4 +1,8 @@
 .cards-preparacao {
+    h2 {
+        font-size: 1.8rem;
+    }
+
     .card {
         background-color: var(--neutral-color);
         padding: 16px;
