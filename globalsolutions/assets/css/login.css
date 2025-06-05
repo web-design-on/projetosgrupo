@@ -11,3 +11,40 @@
     color: var(--primary-color);
 }
 
+.text-white-custom-login{
+    color:black
+}
+
+.darkmode {
+    .input-label {
+        position: absolute;
+        top: -10px;
+        left: 15px;
+        background-color: transparent;
+        color: #f9f6f6;
+        padding: 0 5px;
+        font-size: 0.9rem;
+    }
+
+    .texto-caixa {
+        background-color: #2828282d;
+        border: solid #28282835;
+        color: hsl(0, 4%, 80%);
+    }
+
+    .texto-caixa::placeholder {
+        color: hsl(0, 4%, 80%);
+    }
+
+    .social-login {
+        color: white;
+    }
+
+    .text-white-custom-login {
+        color: white;
+    }
+    .forgot-password {
+        color: white !important;
+    }    
+}
+

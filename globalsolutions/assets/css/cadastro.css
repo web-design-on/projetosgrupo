@@ -10,8 +10,8 @@
 }
 
 .cadastro-caixas {
-    margin-right: 150px;
-    margin-left: 150px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .input-label {
@@ -47,11 +47,11 @@
     .texto-caixa {
         background-color: #2828282d;
         border: solid #28282835;
-        color: hsl(0, 1%, 42%);
+        color: hsl(0, 4%, 80%);
     }
 
     .texto-caixa::placeholder {
-        color: hsl(0, 1%, 42%);
+        color: hsl(0, 4%, 80%);
     }
 
     .social {
@@ -67,5 +67,11 @@
     .cadastro-caixas .row>div {
         flex: 0 0 100% !important;
         max-width: 100% !important;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .texto-caixa{
+        width: 100%;
     }
 }
