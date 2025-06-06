@@ -4,7 +4,6 @@
 
 ## 🧑‍💻 Equipe
 - <a href="https://github.com/natali-schers">Natali Schers</a>
-- <a href="https://github.com/Pedroedgard">Pedro Edgard Agostini Fernandes</a>
 - <a href="https://github.com/Rebeca-Soares">Rebeca Luiza Soares Cerqueira</a>
 - <a href="https://github.com/smaranha">Sarah Raquel Soares Maranhão</a>
 - <a href="https://github.com/Web-D-on">Stephanie da Silva Cruz</a>
