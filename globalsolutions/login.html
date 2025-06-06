@@ -22,7 +22,8 @@
     <header class="mb-4">
         <nav class="navbar navbar-expand-lg pt-3 container">
             <div class="container-fluid">
-                <a class="navbar-brand m-0" href="index.html"><img id="logo" src="./assets/img/logo.svg" alt="Comunidade Nexo"></a>
+                <a class="navbar-brand m-0" href="index.html"><img id="logo" src="./assets/img/logo.svg"
+                        alt="Comunidade Nexo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -33,14 +34,15 @@
                         <li class="nav-item"><a class="nav-link pt-3 px-3" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link pt-3 px-3" href="mapeamento.html">Feed de Mapeamento</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link pt-3 px-3" href="prepararproteger.html">Preparar para Proteger</a></li>
+                        <li class="nav-item"><a class="nav-link pt-3 px-3" href="prepararproteger.html">Preparar para
+                                Proteger</a></li>
                         <li class="nav-item"><a class="nav-link pt-3 px-3" href="doacao.html">Quero Ajudar!</a></li>
-                        <li class="nav-item"><a class="nav-link pt-3 px-3" href="cadastro.html">Login/Cadastro</a></li>
+                        <li class="nav-item"><a class="nav-link pt-3 px-3" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link pt-3 px-3" href="cadastro.html">Cadastre-se</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        
         <div class="container py-3 d-flex align-items-center gap-3">
             <form class="d-flex search-bar w-100" role="search">
                 <input class="form-control" type="search" placeholder="O que você procura?"
@@ -49,60 +51,64 @@
             </form>
             <button class="btn btn-primary btn-theme"><i class="bi bi-moon-stars"></i></button>
         </div>
-
     </header>
 
-    <main class="login">
-        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <main class="login container">
+        <div class="d-flex justify-content-center align-items-center min-vh-100">
             <div class="login-box text-center">
-                <img src="./assets/img/login.png" alt="Imagem de menina olhando o celular" class="img-fluid mb-5" >
+                <img src="./assets/img/login.png" alt="Imagem de menina olhando o celular" class="img-fluid mb-5">
+
+                <h2 class="form-cadastro text-center mb-3">Bem-vindo de volta!</h2>
 
                 <form class="login-form">
-                    <div class="form-group mb-2 position-relative">
-                        <input type="email" class="form-control input-custom pe-5 ps-5 rounded-5 border-0 bg-body-tertiary" placeholder="E-mail" required>
-                        <i class="bi bi-envelope icon-input position-absolute top-50 end-0 ms-3 translate-middle-y me-3"></i>
+                    <div class="col-12 text-start">
+                        <label for="email" class="form-label">E-mail *</label>
+                        <input type="email" id="email" class="form-control" placeholder="E-mail" required>
                     </div>
 
-                    <div class="form-group mb-2 position-relative">
-                        <input type="password" class="form-control input-custom pe-5 ps-5 rounded-5 border-0 bg-body-tertiary" placeholder="Senha" required>
-                        <i class="bi bi-lock icon-input position-absolute top-50 end-0 ms-3 translate-middle-y me-3"></i>
+                    <div class="col-12 text-start mb-2 mt-3">
+                        <label for="senha" class="form-label">Senha *</label>
+                        <input type="password" id="senha" class="form-control" placeholder="Senha" required>
                     </div>
 
-                    <div class="mb-3 text-center forgot-password">
+                    <div class="mb-4 text-center forgot-password">
                         <a href="#" class="link-secondary small forgot-password">Esqueceu sua senha?</a>
                     </div>
 
-                    <button type="submit" class="btn btn-primary w-100 mb-3 bnt-login">Entrar</button>
+                    <button type="submit" class="btn btn-primary mb-2 bnt-login btn-w-295">Entrar</button>
 
-                    <div class="mb-3">
-                        <span class="text-white-custom-login pe-5">Não tem uma conta?</span>
-                        <a href="./cadastro.html" class="submit-cadastro text-white-custom-login">Se cadastre!</a>
+                    <div class="mb-3 d-flex gap-4 justify-content-center">
+                        <span>Não tem uma conta?</span>
+                        <a href="./cadastro.html" class="submit-cadastro text-white-custom-login text-decoration-underline">Se cadastre!</a>
                     </div>
 
-                    <div class="social-login d-flex align-items-center mb-3">
+                    <div class="social-login d-flex align-items-center my-4">
                         <hr class="flex-grow-1">
-                        <span class="mx-2 text-white-custom-login">OU</span>
+                        <span class="mx-2">OU</span>
                         <hr class="flex-grow-1">
                     </div>
 
-                    <div class="text-center mb-3 text-white-custom-login">
+                    <div class="text-white-custom text-center mb-3">
                         Entre com uma rede social
                     </div>
 
                     <div class="social-login d-flex justify-content-center gap-5">
-                        <a href="https://www.apple.com" target="_blank" class="text-dark">
+                        <a href="https://www.apple.com" target="_blank" aria-label="Entrar com Apple" class="text-dark">
                             <i class="bi bi-apple fs-4"></i>
                         </a>
-                        <a href="https://www.facebook.com" target="_blank" class="text-primary">
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Entrar com Facebook"
+                            class="text-primary">
                             <i class="bi bi-facebook fs-4"></i>
                         </a>
-                        <a href="https://www.google.com" target="_blank" class="text-danger">
+                        <a href="https://www.google.com" target="_blank" aria-label="Entrar com Google"
+                            class="text-danger">
                             <i class="bi bi-google fs-4"></i>
                         </a>
                     </div>
                 </form>
             </div>
         </div>
+    </main>
 
         <section class="mt-5 newsletter">
             <div class="container  py-5 text-center">
@@ -115,7 +121,7 @@
                 </form>
             </div>
         </section>
-    
+
         <footer>
             <div class="fs-5 container d-flex flex-row align-items-center gap-3 py-5 justify-content-center">
                 <p class="mb-0">Acesse nossas redes: </p>

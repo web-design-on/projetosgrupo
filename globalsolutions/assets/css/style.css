@@ -60,11 +60,38 @@ h4 {
 }
 /*#endregion Configurações gerais*/
 
+/*#region Formulários*/
+.form-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-control,
+.form-select {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+/*#endregion Formulários*/
+
 /*#region Botões*/
 .btn {
     border-radius: var(--border-radius);
     border: none;
     padding: 8px 24px;
+}
+
+.btn-w-295 {
+    max-width: 295px;
+    width: 100%;
 }
 
 .btn-primary {

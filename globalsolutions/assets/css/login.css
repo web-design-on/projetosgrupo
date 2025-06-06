@@ -1,4 +1,15 @@
-.forgot-password a{
+.login {
+    img {
+        max-height: 225px;
+    }
+}
+
+.login-box {
+    max-width: 400px;
+    width: 100%;
+}
+
+.forgot-password a {
     text-decoration: none;
 }
 
@@ -11,8 +22,12 @@
     color: var(--primary-color);
 }
 
-.text-white-custom-login{
-    color:black
+.text-white-custom-login {
+    color: #000;
+
+    &:is(:hover, :focus) {
+        color: var(--highlight-color);
+    }
 }
 
 .darkmode {
@@ -21,30 +36,34 @@
         top: -10px;
         left: 15px;
         background-color: transparent;
-        color: #f9f6f6;
+        color: var(--neutral-color);
         padding: 0 5px;
         font-size: 0.9rem;
     }
 
     .texto-caixa {
-        background-color: #2828282d;
-        border: solid #28282835;
-        color: hsl(0, 4%, 80%);
+        background-color: var(--primary-color);
+        border: solid var(--primary-color);
+        color: var(--neutral-color);
     }
 
     .texto-caixa::placeholder {
-        color: hsl(0, 4%, 80%);
+        color: var(--neutral-color);
     }
 
     .social-login {
-        color: white;
+        color: var(--neutral-color);
     }
 
     .text-white-custom-login {
-        color: white;
-    }
-    .forgot-password {
-        color: white !important;
-    }    
-}
+        color: var(--neutral-color);
 
+        &:is(:hover, :focus) {
+            color: var(--highlight-color);
+        }
+    }
+
+    .forgot-password {
+        color: var(--neutral-color) !important;
+    }
+}

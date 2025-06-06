@@ -1,24 +1,27 @@
-.form-cadastro {
-    color: var(--primary-color);
+.form-cadastro img {
+    max-height: 225px;
+}
+
+.cadastro-caixas {
+    padding: 0 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cadastro-box {
+    height: auto;
 }
 
 .img-ilustracao {
     width: 3000px;
-    /* aumenta a largura para 300px */
     height: auto;
-    /* mantém proporção */
-}
-
-.cadastro-caixas {
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .input-label {
     position: absolute;
     top: -10px;
     left: 15px;
-    background-color: #fff;
+    background-color: var(--neutral-color);
     padding: 0 5px;
     font-size: 0.9rem;
     color: #333;
@@ -28,12 +31,19 @@
     font-size: 0.8rem;
 }
 
-.cadastro-box {
-    height: auto;
+.submit-cadastro:is(:hover, :focus) {
+    color: var(--highlight-color);
 }
 
+.text-white-custom-login {
+    color: #000;
+}
 
 .darkmode {
+    .form-label, span {
+        color: var(--neutral-color);
+    }
+
     .input-label {
         position: absolute;
         top: -10px;
@@ -54,24 +64,29 @@
         color: hsl(0, 4%, 80%);
     }
 
-    .social {
+    .social,
+    .text-white-custom {
         color: white;
     }
 
-    .text-white-custom {
+    .text-white-custom-login {
         color: white;
+    }
+
+    .text-white-custom-login:is(:hover, :focus) {
+        color: var(--highlight-color);
     }
 }
 
 @media (max-width: 1008px) {
-    .cadastro-caixas .row>div {
+    .cadastro-caixas .row > div {
         flex: 0 0 100% !important;
         max-width: 100% !important;
         width: 100%;
-        margin: 0px;
+        margin: 0;
     }
 
-    .texto-caixa{
+    .texto-caixa {
         width: 100%;
     }
 }
