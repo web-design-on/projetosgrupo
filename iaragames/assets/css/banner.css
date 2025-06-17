@@ -1,0 +1,25 @@
+.banner {
+        border-radius: 20px;
+    background-image: url(../img/banner.png);   
+    display: flex; 
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 24px;
+    position: relative;
+    overflow: hidden;
+        height: 150px;
+}
+
+.frase {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.frase.mostrar {
+    opacity: 1;
+}
