@@ -1,0 +1,21 @@
+.countdown-section {
+    background-color: var(--cor-primaria);
+    color: var(--cor-neutra);
+    border-top: 4px solid var(--cor-secundaria);
+    border-bottom: 4px solid var(--cor-secundaria);
+}
+
+.countdown-section h2 {
+    font-family: "Viga", sans-serif;
+    font-size: 2rem;
+}
+
+.tempo-item {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--cor-destaque);
+    background-color: var(--cor-secundaria);
+    padding: 10px 20px;
+    border-radius: 10px;
+    min-width: 100px;
+}

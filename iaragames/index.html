@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/./menu.css">
     <link rel="stylesheet" href="./assets/css/cards.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+        <link rel="stylesheet" href="./assets/css/contator.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
@@ -64,6 +65,25 @@
         </div>
 
     </header>
+
+    <section class="countdown-section text-center py-5">
+        <h2 class="text-warning mb-2">Promoção especial 🔥</h2>
+        <p class="text-white fs-5">Tempo restante para o lançamento de <strong>Deathbound</strong>:</p>
+        <div id="countdown" class="d-flex justify-content-center gap-4 mt-3">
+            <div class="tempo-item">
+                <span id="dias">00</span><br>Dias
+            </div>
+            <div class="tempo-item">
+                <span id="horas">00</span><br>Horas
+            </div>
+            <div class="tempo-item">
+                <span id="minutos">00</span><br>Minutos
+            </div>
+            <div class="tempo-item">
+                <span id="segundos">00</span><br>Segundos
+            </div>
+        </div>
+    </section>
 
     <main class="container my-5">
         <section class="shop" id="shop">
@@ -512,6 +532,8 @@
     </script>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/contator.js"></script>
+
 </body>
 
 </html>
