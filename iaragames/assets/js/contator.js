@@ -5,7 +5,7 @@ const intervalo = setInterval(() => {
     const agora = new Date().getTime();
     const diferenca = dataLancamento - agora;
 
-    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 10));
     const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
     const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
