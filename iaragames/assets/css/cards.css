@@ -27,3 +27,12 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.carrossel {
+    scrollbar-width: none;
+    /* Firefox */
+}
