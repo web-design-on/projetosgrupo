@@ -1,4 +1,3 @@
-
 .countdown-section {
     background-color: var(--cor-primaria);
     border-top: 4px solid var(--cor-secundaria);
@@ -17,6 +16,19 @@
     color: var(--cor-neutra);
 }
 
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: nowrap; /* Impede quebra de linha */
+    overflow-x: auto;   /* Habilita rolagem horizontal */
+    -webkit-overflow-scrolling: touch; /* Rolagem suave em iOS */
+}
+
+#countdown::-webkit-scrollbar {
+    display: none; /* Oculta barra de rolagem em navegadores compatíveis */
+}
+
 .tempo-item {
     background-color: var(--cor-secundaria);
     color: var(--cor-neutra);
@@ -26,6 +38,7 @@
     text-align: center;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease;
+    flex: 0 0 auto; /* Impede redimensionamento em telas pequenas */
 }
 
 .tempo-item:hover {
@@ -44,7 +57,7 @@
 }
 
 /* Responsividade: mobile */
-@media (max-width: 476px) {
+@media (max-width: 456px) {
     .tempo-item {
         width: 70px;
         padding: 8px;
