@@ -26,4 +26,4 @@ document.addEventListener("DOMContentLoaded", () => {
             container.appendChild(star);
         }
     }
-});
+})
