@@ -1,21 +1,68 @@
+
 .countdown-section {
     background-color: var(--cor-primaria);
-    color: var(--cor-neutra);
     border-top: 4px solid var(--cor-secundaria);
     border-bottom: 4px solid var(--cor-secundaria);
+    color: var(--cor-neutra);
 }
 
-.countdown-section h2 {
+.titulo-promocao {
     font-family: "Viga", sans-serif;
     font-size: 2rem;
+    color: var(--cor-destaque);
+}
+
+.descricao-promocao {
+    font-size: 1.25rem;
+    color: var(--cor-neutra);
 }
 
 .tempo-item {
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: var(--cor-neutra);
     background-color: var(--cor-secundaria);
-    padding: 10px 20px;
+    color: var(--cor-neutra);
     border-radius: 10px;
-    min-width: 100px;
+    padding: 12px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.tempo-item:hover {
+    transform: scale(1.05);
+}
+
+.numero-tempo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    display: block;
+}
+
+.label-tempo {
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+/* Responsividade: mobile */
+@media (max-width: 476px) {
+    .tempo-item {
+        width: 70px;
+        padding: 8px;
+    }
+
+    .numero-tempo {
+        font-size: 1.3rem;
+    }
+
+    .label-tempo {
+        font-size: 0.85rem;
+    }
+
+    .titulo-promocao {
+        font-size: 1.5rem;
+    }
+
+    .descricao-promocao {
+        font-size: 1rem;
+    }
 }
