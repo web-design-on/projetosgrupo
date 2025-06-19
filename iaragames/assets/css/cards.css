@@ -36,3 +36,18 @@
     scrollbar-width: none;
     /* Firefox */
 }
+
+.rating {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ccc;
+    user-select: none;
+}
+
+.rating .star {
+    color: #ccc;
+}
+
+.rating .star.selected {
+    color: var(--cor-destaque);
+}
