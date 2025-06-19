@@ -1,0 +1,27 @@
+#modalSorteio {
+    .modal-dialog {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+
+        #resgatar {
+            max-width: unset;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #modalSorteio {
+        .modal-dialog {
+            .modal-title {
+                font-size: 1.5rem;
+            }
+
+            .modal-footer .btn {
+                width: 100%;
+                max-width: unset;
+
+            }
+        }
+    }
+}

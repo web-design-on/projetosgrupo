@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/cards.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/contator.css">
+    <link rel="stylesheet" href="./assets/css/sorteio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
@@ -428,6 +429,46 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="modalSorteio" tabindex="-1" role="dialog" aria-labelledby="modalSorteioTitulo"
+        aria-describedby="modalSorteioDescricao">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSorteioTitulo">🎉 Quer um desconto especial?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar modal"></button>
+                </div>
+                <div class="modal-body" id="modalSorteioDescricao">
+                    <p class="mb-0" id="sorteioTxt">
+                        Participe do sorteio e descubra qual cupom de desconto você pode ganhar! É rápido,
+                        divertido e pode te garantir aquela ajudinha na próxima compra.
+                    </p>
+                    <p class="d-none mb-0 mt-2" id="cupom"></p>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Fechar modal"
+                        id="fechar">Fechar</button>
+                    <button type="button" class="btn btn-primary" id="sortear"
+                        aria-label="Sortear cupom">Sortear</button>
+                    <button type="button" class="btn btn-primary d-none" id="resgatar" data-bs-dismiss="modal"
+                        aria-label="Resgatar cupom">Resgatar Cupom!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="toastNotificacao" class="toast align-items-center text-white bg-success border-0" role="alert"
+            aria-live="polite" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    O cupom foi copiado para sua área de transferência. Aproveite seu desconto!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Fechar notificação"></button>
+            </div>
+        </div>
+    </div>
+
     <script>
         const jogosExtras = [
             {
@@ -548,7 +589,6 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/contator.js"></script>
     <script src="./assets/js/rating.js"></script>
-
+    <script src="./assets/js/sorteio.js"></script>
 </body>
-
 </html>
