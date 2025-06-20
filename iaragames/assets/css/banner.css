@@ -23,3 +23,10 @@
 .frase.mostrar {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .banner {
+        background-image: url('../img/banner/Cavaleiro\ mobile.png');
+        background-size: cover;
+    }
+}
