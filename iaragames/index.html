@@ -256,7 +256,8 @@
                                 cheia de desafios e inimigos carismáticos!</p>
                             <div class="rating" data-game-id="starlitadventures"></div>
                             <p class="card-text font-viga fs-2">R$ 29,90</p>
-                            <a href="https://store.steampowered.com/app/725050/Starlit_Adventures/" class="btn p-0">
+                            <a href="https://store.playstation.com/pt-br/product/UP0778-CUSA10115_00-DRAGON0000000000/"
+                                class="btn p-0">
                                 <img class="card-button" src="./assets/img/cards/cart_button.png"
                                     alt="Adicionar ao carrinho">
                             </a>
@@ -303,7 +304,7 @@
                                 e uma atmosfera envolvente.</p>
                             <div class="rating" data-game-id="fobia"></div>
                             <p class="card-text font-viga fs-2">R$ 47,99</p>
-                            <a href="https://store.steampowered.com/app/1262830/FOBIA__St_Dinfna_Hotel/"
+                            <a href="https://store.steampowered.com/app/1298140/Fobia__St_Dinfna_Hotel/"
                                 class="btn p-0">
                                 <img class="card-button" src="./assets/img/cards/cart_button.png"
                                     alt="Adicionar ao carrinho">
@@ -321,7 +322,7 @@
                                 jogadores e também como o mestre!</p>
                             <div class="rating" data-game-id="knightsofpenandpaper"></div>
                             <p class="card-text font-viga fs-2">R$ 19,99</p>
-                            <a href="https://store.steampowered.com/app/384750/Knights_of_Pen_and_Paper_2/"
+                            <a href="https://store.steampowered.com/app/231740/Knights_of_Pen_and_Paper_1_Edition/"
                                 class="btn p-0">
                                 <img class="card-button" src="./assets/img/cards/cart_button.png"
                                     alt="Adicionar ao carrinho">
@@ -490,128 +491,13 @@
         </div>
     </div>
 
-    <script>
-        const jogosExtras = [
-            {
-                nome: "DEATHBOUND",
-                modo: "Singleplayer",
-                plataforma: "Windows",
-                genero: "RPG, Ação"
-            },
-            {
-                nome: "DIESEL LEGACY",
-                modo: "Multiplayer",
-                plataforma: "Windows, macOS",
-                genero: "Luta"
-            },
-            {
-                nome: "MARS 2120",
-                modo: "Singleplayer",
-                plataforma: "Windows",
-                genero: "Ação, Sci-fi"
-            },
-            {
-                nome: "MOMODORA",
-                modo: "Singleplayer",
-                plataforma: "Windows",
-                genero: "Plataforma, Aventura"
-            },
-            {
-                nome: "MULLET MADJACK",
-                modo: "Singleplayer",
-                plataforma: "Windows",
-                genero: "FPS, Arcade"
-            },
-            {
-                nome: "DANDARA",
-                modo: "Singleplayer",
-                plataforma: "Windows, macOS",
-                genero: "Metroidvania"
-            },
-            {
-                nome: "BLAZING CHROME",
-                modo: "Singleplayer",
-                plataforma: "Windows, macOS",
-                genero: "Metroidvania"
-            },
-            {
-                nome: "HORIZON CHASE",
-                modo: "Singleplayer",
-                plataforma: "Windows, macOS",
-                genero: "Metroidvania"
-            },
-            {
-                nome: "CHROMA SQUAD",
-                modo: "Singleplayer",
-                plataforma: "Windows, macOS",
-                genero: "Metroidvania"
-            },
-            {
-                nome: "STARLIT ADVENTURES",
-                modo: "Singleplayer",
-                plataforma: "Windows, macOS",
-                genero: "Metroidvania"
-            },
-            {
-                nome: "UNSIGHTED",
-                modo: "Singleplayer",
-                plataforma: "Windows, macOS",
-                genero: "Metroidvania"
-            },
-            {
-                nome: "NO PLACE FOR BRAVERY",
-                modo: "Singleplayer",
-                plataforma: "Windows, macOS",
-                genero: "Metroidvania"
-            },
-            {
-                nome: "FOBIA: ST. DINFNA HOTEL",
-                modo: "Singleplayer",
-                plataforma: "Windows, macOS",
-                genero: "Metroidvania"
-            },
-            {
-                nome: "KNIGHTS OF PEN AND PAPER",
-                modo: "Singleplayer",
-                plataforma: "Windows, macOS",
-                genero: "Metroidvania"
-            },
-        ];
-
-        const cards = document.querySelectorAll('.card');
-
-        cards.forEach(card => {
-            const nome = card.querySelector('h5')?.innerText.trim().toUpperCase();
-            const dados = jogosExtras.find(jogo => jogo.nome === nome);
-
-            if (dados) {
-                const info = document.createElement('div');
-                info.classList.add('card-hover-info');
-                info.innerHTML = `
-              <p class="small">🎮 ${dados.modo}</p>
-              <p class="small">💻 ${dados.plataforma}</p>
-              <p class="small">🧩 ${dados.genero}</p>
-            `;
-                card.appendChild(info);
-            }
-        });
-
-        // Lógica do carrossel (rolagem horizontal)
-        const carrossel = document.querySelector('.carrossel');
-        document.querySelector('.btn-proximo').addEventListener('click', () => {
-            carrossel.scrollBy({ left: 300, behavior: 'smooth' });
-        });
-
-        document.querySelector('.btn-anterior').addEventListener('click', () => {
-            carrossel.scrollBy({ left: -300, behavior: 'smooth' });
-        });
-    </script>
-
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/contator.js"></script>
     <script src="./assets/js/rating.js"></script>
     <script src="./assets/js/sorteio.js"></script>
     <script src="./assets/js/newsletter.js"></script>
+    <script src="./assets/js/cards.js"></script>
+    <script src="./assets/js/carrossel.js"></script>
 
 </body>
 
