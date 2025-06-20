@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const modalElement = document.getElementById('modalSorteio');
+
     if (localStorage.getItem('cupomResgatado') == null) {
-        const modalElement = document.getElementById('modalSorteio');
         const modal = new bootstrap.Modal(modalElement);
         modal.show();
+    } else {
+        modalElement.remove();
     }
 });
 
