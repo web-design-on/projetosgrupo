@@ -1,8 +1,8 @@
 @import url(style.css);
 
-/*Banner Parceiros Header*/
+/*Banner Comunidades Header*/
 
-.banner-parceiros {
+.banner-comunidade {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -17,21 +17,23 @@
 .conteudo-banner {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  left: auto;
   padding: 100px 70px;
   color: var(--branco);
   max-width: 700px;
+  text-align: right;
 }
 
 .tagline {
   font-family: var(--fonte-texto);
   font-weight: 900;
   font-size: 20px;
-  color: var(--texto);
 }
 
 .titulo {
   font-family: var(--fonte-titulo);
+  color: var(--amarelo);
   font-size: 84px;
   line-height: 1.1;
   margin-bottom: 10px;
@@ -42,5 +44,6 @@
   font-family: var(--fonte-texto);
   font-weight: 400;
   font-size: 24px;
-  max-width: 75%;
+  text-align: justify;
+  direction: rtl;
 }
