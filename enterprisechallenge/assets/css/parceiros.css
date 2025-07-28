@@ -1,0 +1,47 @@
+@import url(style.css);
+
+/*Banner Home Header*/
+
+.banner-parceiros {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.conteudo-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 100px 70px;
+  color: var(--branco);
+  max-width: 700px;
+}
+
+.tagline {
+  font-family: var(--fonte-texto);
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--texto);
+}
+
+.titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 84px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.subtitulo {
+  font-family: var(--fonte-texto);
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 90px;
+  max-width: 75%;
+}
