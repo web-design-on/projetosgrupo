@@ -68,3 +68,58 @@
   padding: 10px 30px;
   text-decoration: none;
 }
+
+/* Banner Secundário */
+.banner-secundario {
+  color: var(--texto);
+  padding: 80px;
+}
+
+/* Lado Esquerdo */
+.tagline-clarion {
+  font-family: var(--fonte-titulo);
+  font-size: 36px;
+  color: var(--azul);
+}
+
+.titulo-secundario {
+  font-family: var(--fonte-titulo);
+  font-size: 36px;
+}
+
+.topico img {
+  width: 40px;
+  height: 40px;
+}
+
+.topico p {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  max-width: 55%;
+}
+
+.topico-titulo {
+  font-weight: 800;
+  display: block;
+}
+
+/* Lado Direito (Card Evento) */
+.card-evento {
+  background: var(--branco);
+  border-radius: 26px;
+  box-shadow: 0 4px 10px rgba(156, 160, 176, 0.1);
+  max-width: 320px;
+}
+
+.evento-titulo {
+  font-family: var(--fonte-texto);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.evento-data,
+.evento-participantes {
+  font-family: var(--fonte-texto);
+  font-size: 14px;
+  color: var(--cinza-escuro);
+}
