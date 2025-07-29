@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/parceiros.css">
   <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/filtro.css">
+
 
   <title>Parceiros e Instrutores</title>
 </head>
@@ -61,6 +63,78 @@
       </p>
     </div>
   </header>
+
+  <section class="container my-4">
+    <form id="filtroForm" class="bg-white border rounded-3 shadow-sm p-3">
+      <div class="row g-2 align-items-end">
+
+        <div class="col-6 col-md-2">
+          <label for="esporte" class="form-label small">Esporte</label>
+          <select id="esporte" class="form-select form-select-sm">
+            <option value="" selected>Escolha</option>
+            <option>Goalball</option>
+            <option>Atletismo com guia</option>
+            <option>Soundball Tennis</option>
+            <option>Artes marciais</option>
+          </select>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <label for="cidade" class="form-label small">Cidade</label>
+          <select id="cidade" class="form-select form-select-sm">
+            <option value="" selected>Escolha</option>
+            <option>São Paulo (capital)</option>
+            <option>Santos</option>
+            <option>Osasco</option>
+            <option>São José dos Campos</option>
+          </select>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <label for="bairro" class="form-label small">Bairro</label>
+          <select id="bairro" class="form-select form-select-sm">
+            <option value="" selected>Escolha</option>
+            <option>Moema</option>
+            <option>Gonzaga</option>
+            <option>Bela Vista</option>
+            <option>Bosque dos Eucaliptos</option>
+          </select>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <label for="instrutor" class="form-label small">Parceiro/Instrutor</label>
+          <select id="instrutor" class="form-select form-select-sm">
+            <option value="" selected>Escolha</option>
+            <option>Natali Schers</option>
+            <option>Sarah Maranhão</option>
+            <option>Rebeca Soares</option>
+            <option>Stephanie Silva</option>
+          </select>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <label for="genero" class="form-label small">Gênero</label>
+          <select id="genero" class="form-select form-select-sm">
+            <option value="" selected>Escolha</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Outro</option>
+          </select>
+        </div>
+
+        <div class="col-12 col-md-2 d-flex gap-2">
+          <button type="submit" class="btn btn-dark btn-sm flex-fill">Filtrar</button>
+          <button type="button" id="btnLimpar" class="btn btn-secondary btn-sm flex-fill">Limpar</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 
 </body>
 

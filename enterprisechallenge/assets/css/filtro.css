@@ -1,0 +1,42 @@
+@import url(style.css);
+
+
+#filtroForm label {
+    font-size: 14px;
+    color: #030303;
+}
+
+#filtroForm select,
+#filtroForm .custom-date {
+    font-size: 14px;
+    border: 1px solid var(--azul);
+    border-radius: 4px;
+    padding: 4px 8px;
+    height: calc(1.5em + 0.5rem + 2px); 
+}
+
+#filtroForm button {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+#filtroForm .btn-dark {
+    background-color: var(--texto);
+    color: var(--branco);
+}
+
+#filtroForm .btn-dark:hover {
+    background-color:var(--cinza-escuro);
+}
+
+#filtroForm .btn-secondary {
+    background-color: var(--cinza-claro);
+    color: var(--texto);
+}
+
+#filtroForm .btn-secondary:hover {
+    background-color: #bbb;
+}
