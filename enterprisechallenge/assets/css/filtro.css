@@ -12,7 +12,7 @@
     border: 1px solid var(--azul);
     border-radius: 4px;
     padding: 4px 8px;
-    height: calc(1.5em + 0.5rem + 2px); 
+    height: calc(1.5em + 0.5rem + 2px);
 }
 
 #filtroForm button {
@@ -29,7 +29,7 @@
 }
 
 #filtroForm .btn-dark:hover {
-    background-color:var(--cinza-escuro);
+    background-color: var(--cinza-escuro);
 }
 
 #filtroForm .btn-secondary {
@@ -39,4 +39,21 @@
 
 #filtroForm .btn-secondary:hover {
     background-color: #bbb;
+}
+
+@media (max-width: 991px) {
+    #filtroForm button {
+        font-size: 12px;
+        padding: 4px 6px;
+        border-radius: 2px;
+        border: 1px solid transparent;
+    }
+
+    #filtroForm .btn-dark {
+        border: 1px solid var(--texto);
+    }
+
+    #filtroForm .btn-secondary {
+        border: 1px solid var(--cinza-claro);
+    }
 }

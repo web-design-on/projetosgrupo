@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/locais.css">
   <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/filtro.css">
+
 
   <title>Locais</title>
 </head>
@@ -62,6 +64,84 @@
       </p>
     </div>
   </header>
+
+  <section class="container my-4">
+  <form id="filtroForm" class="bg-white border rounded-3 shadow-sm p-3">
+    <div class="row g-3">
+
+      <!-- Esporte -->
+      <div class="col-12 col-md-2">
+        <label for="esporte" class="form-label small">Esporte</label>
+        <select id="esporte" class="form-select form-select-sm">
+          <option value="" selected>Escolha</option>
+          <option>Goalball</option>
+          <option>Atletismo com guia</option>
+          <option>Natação</option>
+          <option>Judô</option>
+          <option>Soundball Tennis</option>
+          <option>Artes marciais</option>
+        </select>
+      </div>
+
+      <!-- Cidade -->
+      <div class="col-12 col-md-2">
+        <label for="cidade" class="form-label small">Cidade</label>
+        <select id="cidade" class="form-select form-select-sm">
+          <option value="" selected>Escolha</option>
+          <option>São Paulo (capital)</option>
+          <option>Santos</option>
+          <option>Campinas</option>
+          <option>Guarulhos</option>
+          <option>Osasco</option>
+          <option>São José dos Campos</option>
+        </select>
+      </div>
+
+      <!-- Bairro -->
+      <div class="col-12 col-md-2">
+        <label for="bairro" class="form-label small">Bairro</label>
+        <select id="bairro" class="form-select form-select-sm">
+          <option value="" selected>Escolha</option>
+          <option>Moema</option>
+          <option>Gonzaga</option>
+          <option>Jordanópolis</option>
+          <option>Taboão</option>
+          <option>Bela Vista</option>
+          <option>Bosque dos Eucaliptos</option>
+        </select>
+      </div>
+
+      <!-- Estilo -->
+      <div class="col-12 col-md-2">
+        <label for="estilo" class="form-label small">Estilo</label>
+        <select id="estilo" class="form-select form-select-sm">
+          <option value="" selected>Escolha</option>
+          <option>Prática</option>
+          <option>Competição</option>
+        </select>
+      </div>
+
+      <!-- Data -->
+      <div class="col-12 col-md-2">
+        <label for="data" class="form-label small">Data</label>
+        <input type="date" id="data" class="form-control form-control-sm custom-date">
+      </div>
+
+      <!-- Botões -->
+      <div class="col-12 col-md-2 d-flex gap-2">
+        <button type="submit" class="btn btn-dark btn-sm flex-fill">Filtrar</button>
+        <button type="reset" id="btnLimpar" class="btn btn-secondary btn-sm flex-fill">Limpar</button>
+      </div>
+    </div>
+  </form>
+</section>
+
+
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 
 </body>
 

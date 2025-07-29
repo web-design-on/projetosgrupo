@@ -11,14 +11,14 @@
 }
 
 .custom-link:hover {
-    background-color:var(--cinza-escuro);
+    background-color: var(--cinza-escuro);
     text-decoration: none;
     transform: translateY(-2px);
 }
 
 .cadastro-custom {
     font-weight: bold;
-    color:var(--texto);
+    color: var(--texto);
     border: 2px solid var(--amarelo);
     border-radius: 8px;
     padding: 8px 16px;
@@ -32,4 +32,22 @@
     transform: scale(1.05);
 }
 
+@media (max-width: 991px) {
+    .navbar-nav {
+        gap: 0 !important;
+    }
 
+
+
+    .navbar-nav .nav-link {
+        padding: 10px 16px;
+        border-radius: 6px;
+        display: inline-block;
+        width: auto;
+    }
+
+    .cadastro-custom {
+        width: auto;
+        margin-top: 0;
+    }
+}
