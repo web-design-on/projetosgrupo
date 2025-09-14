@@ -66,95 +66,79 @@
   </header>
 
   <section class="container my-4">
-    <form id="filtroForm" class="bg-white border rounded-3 shadow-sm p-3">
-      <div class="row g-3">
+  <form id="filtroForm" class="bg-white border rounded-3 shadow-sm p-3">
+    <div class="row g-3">
 
-        <div class="col-12 col-md-2">
-          <label for="esporte" class="form-label small">Esporte</label>
-          <select id="esporte" class="form-select form-select-sm">
-            <option value="" selected>Escolha</option>
-            <option>Goalball</option>
-            <option>Atletismo com guia</option>
-            <option>Natação</option>
-            <option>Judô</option>
-            <option>Soundball Tennis</option>
-            <option>Artes marciais</option>
-          </select>
-        </div>
-
-        <div class="col-12 col-md-2">
-          <label for="cidade" class="form-label small">Cidade</label>
-          <select id="cidade" class="form-select form-select-sm">
-            <option value="" selected>Escolha</option>
-            <option value="SP">São Paulo</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="BA">Bahia</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="PR">Paraná</option>
-            <option value="PE">Pernambuco</option>
-            <option value="CE">Ceará</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="GO">Goiás</option>
-            <option value="DF">Distrito Federal</option>
-            F
-          </select>
-        </div>
-
-        <div class="col-12 col-md-2">
-          <label for="bairro" class="form-label small">Bairro</label>
-          <select id="bairro" class="form-select form-select-sm">
-            <option value="" selected>Escolha</option>
-            <option>Moema</option>
-            <option>Pinheiros</option>
-            <option>Vila Mariana</option>
-            <option>Copacabana</option>
-            <option>Barra da Tijuca</option>
-            <option>Lapa</option>
-            <option>Savassi</option>
-            <option>Pampulha</option>
-            <option>Lourdes</option>
-            <option>Barra</option>
-            <option>Ondina</option>
-            <option>Pelourinho</option>
-            <option>Moinhos de Vento</option>
-            <option>Bom Fim</option>
-            <option>Cidade Baixa</option>
-            <option>Batel</option>
-            <option>Centro Cívico</option>
-            <option>Água Verde</option>
-            <option>Boa Viagem</option>
-            <option>Casa Forte</option>
-            <option>Graças</option>
-            <option>Meireles</option>
-            <option>Aldeota</option>
-            <option>Mucuripe</option>
-
-
-          </select>
-        </div>
-
-        <div class="col-12 col-md-2">
-          <label for="estilo" class="form-label small">Estilo</label>
-          <select id="estilo" class="form-select form-select-sm">
-            <option value="" selected>Escolha</option>
-            <option>Prática</option>
-            <option>Competição</option>
-          </select>
-        </div>
-
-        <div class="col-12 col-md-2">
-          <label for="data" class="form-label small">Data</label>
-          <input type="date" id="data" class="form-control form-control-sm custom-date">
-        </div>
-
-        <div class="col-12 col-md-2 d-flex gap-2">
-          <button type="submit" class="btn btn-dark btn-sm flex-fill">Filtrar</button>
-          <button type="reset" id="btnLimpar" class="btn btn-secondary btn-sm flex-fill">Limpar</button>
-        </div>
+      <div class="col-12 col-md-2">
+        <label for="esporte" class="form-label small">Esporte</label>
+        <select id="esporte" class="form-select form-select-sm">
+          <option value="" selected>Escolha</option>
+          <option>Futebol de 5</option>
+          <option>Voleibol Adaptado</option>
+          <option>Basquete Adaptado</option>
+          <option>Goalball</option>
+          <option>Atletismo com guia</option>
+          <option>Natação</option>
+          <option>Judô</option>
+          <option>Soundball Tennis</option>
+          <option>Artes marciais</option>
+        </select>
       </div>
-    </form>
-  </section>
+
+      <div class="col-12 col-md-2">
+        <label for="cidade" class="form-label small">Cidade</label>
+        <select id="cidade" class="form-select form-select-sm">
+          <option value="" selected>Escolha</option>
+          <option value="SP" selected>São Paulo</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="BA">Bahia</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="CE">Ceará</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="GO">Goiás</option>
+          <option value="DF">Distrito Federal</option>
+        </select>
+      </div>
+
+      <div class="col-12 col-md-2">
+        <label for="bairro" class="form-label small">Bairro</label>
+        <select id="bairro" class="form-select form-select-sm">
+          <option value="" selected>Escolha</option>
+          <option>Centro</option>
+          <option>Jardim</option>
+          <option>Moema</option>
+          <option>Pinheiros</option>
+          <option>Vila Mariana</option>
+        </select>
+      </div>
+
+      <!-- Estilo -->
+      <div class="col-12 col-md-2">
+        <label for="estilo" class="form-label small">Estilo</label>
+        <select id="estilo" class="form-select form-select-sm">
+          <option value="" selected>Escolha</option>
+          <option>Prática</option>
+          <option>Competição</option>
+        </select>
+      </div>
+
+      <div class="col-12 col-md-2">
+        <label for="data" class="form-label small">Data</label>
+        <input type="date" id="data" class="form-control form-control-sm custom-date">
+      </div>
+
+      <div class="col-12 col-md-2 d-flex gap-2">
+        <button type="submit" class="btn btn-dark btn-sm flex-fill">Filtrar</button>
+        <button type="button" id="btnLimpar" class="btn btn-secondary btn-sm flex-fill">Limpar</button>
+      </div>
+    </div>
+  </form>
+</section>
+
+
 
 
 
