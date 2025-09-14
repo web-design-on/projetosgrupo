@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variáveis */
+:root {
+    --fonte-titulo: 'Anton', sans-serif;
+    --fonte-texto: 'Roboto', sans-serif;
+    --branco: #ffffff;
+    --azul: #3B87B2;
+    --texto: #333333;
+    --cinza-escuro: #9CA0B0;
+    --cinza-claro: #F2F2F2;
+    --amarelo: #F0BC22;
+    --vermelho: #D22828;
+}

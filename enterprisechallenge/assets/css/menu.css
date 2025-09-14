@@ -1,0 +1,33 @@
+.bg-custom {
+    background-color: var(--cinza-claro);
+}
+
+.custom-link {
+    font-weight: normal;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.custom-link:hover {
+    background-color: var(--cinza-escuro);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.cadastro-custom {
+    font-weight: bold;
+    color: var(--texto);
+    border: 2px solid var(--amarelo);
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cadastro-custom:hover,
+.cadastro-custom:focus {
+    background-color: var(--amarelo);
+    transform: scale(1.05);
+}

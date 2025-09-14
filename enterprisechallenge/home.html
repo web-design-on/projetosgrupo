@@ -4,10 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+
+    <title>Clarion</title>
 </head>
 
 <body>
+    <header class="mb-0 bg-custom">
+        <nav class="navbar navbar-expand-lg pt-3 container-fluid">
+            <div class="container">
+                <a class="navbar-brand m-0" href="index.html">
+                    <img id="logo" src="./assets/img/Logo.svg" alt="Clarion">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-3 mb-4 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link custom-link" href="index.html">Página inicial</a></li>
+                        <li class="nav-item"><a class="nav-link custom-link" href="perfil.html">Perfil</a></li>
+                        <li class="nav-item"><a class="nav-link custom-link"
+                                href="parceiroinstrutor.html">Parceiro/Instrutor</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link custom-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link custom-link" href="comunidade.html">Comunidade</a></li>
+                        <li class="nav-item"><a class="nav-link custom-link" href="locais.html">Locais</a></li>
+                        <li class="nav-item"><a class="nav-link custom-link" href="login.html">Login</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link cadastro-custom" href="cadastro.html">Cadastre-se</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <header class="banner-home position-relative">
+        <img src="./assets/img/fundo_header_home.png" alt="Banner Esporte Acessível" class="img-banner">
+        <div class="conteudo-banner container text-start">
+            <p class="tagline mb-2">CLAREZA EM CADA PASSO</p>
+            <h1 class="titulo mb-2">ESPORTE ACESSÍVEL, AUTONOMIA REAL!</h1>
+            <p class="subtitulo mb-4">
+                Uma plataforma pensada para pessoas com deficiência visual praticarem esportes com autonomia, segurança
+                e
+                comunidade.
+            </p>
+            <a href="#" class="btn btn-banner">Participe da comunidade</a>
+        </div>
+    </header>
+
+    <section class="banner-secundario container py-5">
+        <div class="row align-items-center">
+            <!-- Lado Esquerdo -->
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <p class="tagline-clarion mb-2">CLARION</p>
+                <h2 class="titulo-secundario mb-4">Sua jornada esportiva começa aqui</h2>
+                <div class="topico d-flex mb-3">
+                    <img src="./assets/img/ícone_natacao.png" alt="Ícone natação" class="me-3">
+                    <p class="mb-0">
+                        <span class="topico-titulo">Orientação inteligente.</span>
+                        Ferramentas e recursos pensados para guiar sua prática esportiva com autonomia e segurança.
+                    </p>
+                </div>
+                <div class="topico d-flex mb-3">
+                    <img src="./assets/img/ícone_comunidade.png" alt="Ícone comunidade" class="me-3">
+                    <p class="mb-0">
+                        <span class="topico-titulo">Comunidade de atletas.</span>
+                        Conecte-se com outras pessoas que compartilham seus desafios, metas e conquistas.
+                    </p>
+                </div>
+
+                <div class="topico d-flex">
+                    <img src="./assets/img/ícone_instrutor.png" alt="Ícone instrutor" class="me-3">
+                    <p class="mb-0">
+                        <span class="topico-titulo">Apoio para sua evolução.</span>
+                        Acesso a treinos adaptados, profissionais especializados e tecnologias que impulsionam sua
+                        performance.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Lado Direito -->
+            <div class="col-lg-5">
+                <div class="card-evento p-3">
+                    <img src="./assets/img/evento_liga_nacional.png" alt="Imagem evento" class="img-fluid rounded mb-3">
+                    <p class="evento-titulo mb-1">Liga Nacional de <br> Futebol para Cegos</p>
+                    <p class="evento-data mb-3">23-24 de Agosto</p>
+                    <div class="d-flex gap-3 mb-3">
+                        <img src="./assets/img/ícone_futebol.png" alt="Ícone futebol">
+                        <img src="./assets/img/ícone_mapa.png" alt="Ícone mapa">
+                        <img src="./assets/img/ícone_compartilhar.png" alt="Ícone compartilhar">
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/ícone_quadra.png" alt="Ícone quadra" class="me-2">
+                        <p class="evento-participantes mb-0">24 pessoas participando</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
