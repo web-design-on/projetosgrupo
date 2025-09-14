@@ -64,30 +64,30 @@
     </div>
   </header>
 <section class="container my-4">
-  <form id="filtroForm" class="bg-white border rounded-3 shadow-sm p-3">
+  <form class="filtro-form bg-white border rounded-3 shadow-sm p-3">
     <div class="row g-2 align-items-end">
 
       <div class="col-6 col-md-2">
-        <label for="estado" class="form-label small">Estado</label>
-        <select id="estado" class="form-select form-select-sm">
+        <label class="label-pequena">Estado</label>
+        <select class="form-select form-select-sm input-filtro">
           <option value="" selected>Escolha</option>
-          <option value="SP">São Paulo</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="MG">Minas Gerais</option>
-          <option value="BA">Bahia</option>
-          <option value="RS">Rio Grande do Sul</option>
-          <option value="PR">Paraná</option>
-          <option value="PE">Pernambuco</option>
-          <option value="CE">Ceará</option>
-          <option value="SC">Santa Catarina</option>
-          <option value="GO">Goiás</option>
-          <option value="DF">Distrito Federal</option>
+          <option>São Paulo</option>
+          <option>Rio de Janeiro</option>
+          <option>Minas Gerais</option>
+          <option>Bahia</option>
+          <option>Rio Grande do Sul</option>
+          <option>Paraná</option>
+          <option>Pernambuco</option>
+          <option>Ceará</option>
+          <option>Santa Catarina</option>
+          <option>Goiás</option>
+          <option>Distrito Federal</option>
         </select>
       </div>
 
       <div class="col-6 col-md-2">
-        <label for="cidade" class="form-label small">Cidade</label>
-        <select id="cidade" class="form-select form-select-sm">
+        <label class="label-pequena">Cidade</label>
+        <select class="form-select form-select-sm input-filtro">
           <option value="" selected>Escolha</option>
           <option>Mauá</option>
           <option>Santo André</option>
@@ -96,8 +96,8 @@
       </div>
 
       <div class="col-6 col-md-2">
-        <label for="instrutor" class="form-label small">Parceiro/Instrutor</label>
-        <select id="instrutor" class="form-select form-select-sm">
+        <label class="label-pequena">Parceiro/Instrutor</label>
+        <select class="form-select form-select-sm input-filtro">
           <option value="" selected>Escolha</option>
           <option>Natali Schers</option>
           <option>Rafael Silva</option>
@@ -109,8 +109,8 @@
       </div>
 
       <div class="col-6 col-md-2">
-        <label for="genero" class="form-label small">Gênero</label>
-        <select id="genero" class="form-select form-select-sm">
+        <label class="label-pequena">Gênero</label>
+        <select class="form-select form-select-sm input-filtro">
           <option value="" selected>Escolha</option>
           <option>Masculino</option>
           <option>Feminino</option>
@@ -118,9 +118,9 @@
         </select>
       </div>
 
-      <div class="col-12 col-md-2 d-flex gap-2">
-        <button type="submit" class="btn btn-dark btn-sm flex-fill">Filtrar</button>
-        <button type="button" id="btnLimpar" class="btn btn-secondary btn-sm flex-fill">Limpar</button>
+      <div class="col-12 col-md-2 d-flex gap-3">
+        <button type="submit" class="btn-filtrar flex-fill btn-sm">Filtrar</button>
+        <button type="reset" class="btn-limpar flex-fill btn-sm">Limpar</button>
       </div>
 
     </div>

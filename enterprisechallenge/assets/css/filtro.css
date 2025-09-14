@@ -1,13 +1,13 @@
-@import url(style.css);
+@import url('style.css');
 
-
-#filtroForm label {
+/* Classes para labels */
+.label-pequena {
     font-size: 14px;
-    color: #030303;
+    color: var(--texto)
 }
 
-#filtroForm select,
-#filtroForm .custom-date {
+/* Classes para selects e inputs */
+.input-filtro {
     font-size: 14px;
     border: 1px solid var(--azul);
     border-radius: 4px;
@@ -15,45 +15,39 @@
     height: calc(1.5em + 0.5rem + 2px);
 }
 
-#filtroForm button {
+/* Classes para botões */
+.btn-filtrar {
     font-size: 14px;
     padding: 6px 12px;
     border-radius: 4px;
+    background-color: var(--texto);
+    color: var(--branco);
     border: none;
     cursor: pointer;
 }
 
-#filtroForm .btn-dark {
-    background-color: var(--texto);
-    color: var(--branco);
-}
-
-#filtroForm .btn-dark:hover {
+.btn-filtrar:hover {
     background-color: var(--cinza-escuro);
 }
 
-#filtroForm .btn-secondary {
+.btn-limpar {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
     background-color: var(--cinza-claro);
     color: var(--texto);
+    border: none;
+    cursor: pointer;
 }
 
-#filtroForm .btn-secondary:hover {
+.btn-limpar:hover {
     background-color: #bbb;
 }
 
-@media (max-width: 991px) {
-    #filtroForm button {
+@media (max-width: 791px) {
+    .btn-filtrar, .btn-limpar {
         font-size: 12px;
         padding: 4px 6px;
         border-radius: 2px;
-        border: 1px solid transparent;
-    }
-
-    #filtroForm .btn-dark {
-        border: 1px solid var(--texto);
-    }
-
-    #filtroForm .btn-secondary {
-        border: 1px solid var(--cinza-claro);
     }
 }

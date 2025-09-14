@@ -66,12 +66,12 @@
   </header>
 
   <section class="container my-4">
-  <form id="filtroForm" class="bg-white border rounded-3 shadow-sm p-3">
+  <form class="filtro-form bg-white border rounded-3 shadow-sm p-3">
     <div class="row g-3">
 
       <div class="col-12 col-md-2">
-        <label for="esporte" class="form-label small">Esporte</label>
-        <select id="esporte" class="form-select form-select-sm">
+        <label class="label-pequena">Esporte</label>
+        <select class="form-select form-select-sm input-filtro">
           <option value="" selected>Escolha</option>
           <option>Futebol de 5</option>
           <option>Voleibol Adaptado</option>
@@ -86,26 +86,26 @@
       </div>
 
       <div class="col-12 col-md-2">
-        <label for="cidade" class="form-label small">Cidade</label>
-        <select id="cidade" class="form-select form-select-sm">
+        <label class="label-pequena">Cidade</label>
+        <select class="form-select form-select-sm input-filtro">
           <option value="" selected>Escolha</option>
-          <option value="SP" selected>São Paulo</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="MG">Minas Gerais</option>
-          <option value="BA">Bahia</option>
-          <option value="RS">Rio Grande do Sul</option>
-          <option value="PR">Paraná</option>
-          <option value="PE">Pernambuco</option>
-          <option value="CE">Ceará</option>
-          <option value="SC">Santa Catarina</option>
-          <option value="GO">Goiás</option>
-          <option value="DF">Distrito Federal</option>
+          <option>São Paulo</option>
+          <option>Rio de Janeiro</option>
+          <option>Minas Gerais</option>
+          <option>Bahia</option>
+          <option>Rio Grande do Sul</option>
+          <option>Paraná</option>
+          <option>Pernambuco</option>
+          <option>Ceará</option>
+          <option>Santa Catarina</option>
+          <option>Goiás</option>
+          <option>Distrito Federal</option>
         </select>
       </div>
 
       <div class="col-12 col-md-2">
-        <label for="bairro" class="form-label small">Bairro</label>
-        <select id="bairro" class="form-select form-select-sm">
+        <label class="label-pequena">Bairro</label>
+        <select class="form-select form-select-sm input-filtro">
           <option value="" selected>Escolha</option>
           <option>Centro</option>
           <option>Jardim</option>
@@ -115,28 +115,20 @@
         </select>
       </div>
 
-      <!-- Estilo -->
-      <div class="col-12 col-md-2">
-        <label for="estilo" class="form-label small">Estilo</label>
-        <select id="estilo" class="form-select form-select-sm">
-          <option value="" selected>Escolha</option>
-          <option>Prática</option>
-          <option>Competição</option>
-        </select>
+      <div class="col-12 col-md-3">
+        <label class="label-pequena">Data</label>
+        <input type="date" class="form-control form-control-sm input-filtro">
       </div>
 
-      <div class="col-12 col-md-2">
-        <label for="data" class="form-label small">Data</label>
-        <input type="date" id="data" class="form-control form-control-sm custom-date">
+      <div class="col-12 col-md-2 d-flex gap-3">
+        <button type="submit" class="btn-filtrar flex-fill btn-sm">Filtrar</button>
+        <button type="reset" class="btn-limpar flex-fill btn-sm">Limpar</button>
       </div>
 
-      <div class="col-12 col-md-2 d-flex gap-2">
-        <button type="submit" class="btn btn-dark btn-sm flex-fill">Filtrar</button>
-        <button type="button" id="btnLimpar" class="btn btn-secondary btn-sm flex-fill">Limpar</button>
-      </div>
     </div>
   </form>
 </section>
+
 
 
 
