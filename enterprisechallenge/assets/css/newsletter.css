@@ -1,0 +1,29 @@
+.card,
+.card * {
+    font-family: var(--fonte-texto);
+    color: var(--texto);
+}
+
+.card-title {
+    color: var(--texto);
+}
+
+.input-group input.form-control {
+    color: var(--texto);
+    font-family: var(--fonte-texto);
+}
+
+.input-group-text i {
+    color: var(--texto);
+}
+
+.input-group .btn-danger {
+    background-color: var(--vermelho);
+    border-color: var(--vermelho);
+    color: var(--branco);
+    font-family: var(--fonte-texto);
+}
+
+.input-group input::placeholder {
+    color: var(--cinza-escuro);
+}

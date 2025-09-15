@@ -1,0 +1,57 @@
+footer,
+footer * {
+    font-family: var(--fonte-texto);
+    color: var(--texto);
+}
+
+footer h6 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+footer h4.navegue {
+    color: var(--azul);
+}
+
+footer h4.comunidade {
+    color: var(--vermelho);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--texto);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .fa-square-facebook {
+    color: var(--azul);
+}
+
+footer .fa-square-instagram {
+    color: var(--vermelho);
+}
+
+footer .fa-square-x-twitter {
+    color: var(--texto);
+}
+
+footer .fa-square-whatsapp {
+    color: var(--amarelo);
+}
+
+footer .text-center.p-4 {
+    font-size: 0.9rem;
+    color: var(--texto);
+}
+
+footer .social-icons i {
+    font-size: 3.2rem;
+    transition: color 0.3s;
+}
+
+footer .social-icons i:hover {
+    color: var(--cinza-escuro);
+}
