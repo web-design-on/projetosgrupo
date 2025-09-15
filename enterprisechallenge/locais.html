@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/newsletter.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+        <link rel="stylesheet" href="./assets/css/filtro.css">
+
     <title>Locais</title>
 </head>
 
@@ -69,6 +71,70 @@
             </p>
         </div>
     </header>
+
+    <section class="container my-4">
+    <form class="filtro-form bg-white border rounded-3 shadow-sm p-3">
+        <div class="row g-2 align-items-end">
+
+            <div class="col-12 col-md-2">
+                <label class="label-pequena">Esporte</label>
+                <select class="form-select form-select-sm input-filtro">
+                    <option value="" selected>Escolha</option>
+                    <option>Futebol de 5</option>
+                    <option>Voleibol Adaptado</option>
+                    <option>Basquete Adaptado</option>
+                    <option>Goalball</option>
+                    <option>Atletismo com guia</option>
+                    <option>Natação</option>
+                    <option>Judô</option>
+                    <option>Soundball Tennis</option>
+                    <option>Artes marciais</option>
+                </select>
+            </div>
+
+            <div class="col-12 col-md-2">
+                <label class="label-pequena">Cidade</label>
+                <select class="form-select form-select-sm input-filtro">
+                    <option value="" selected>Escolha</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Minas Gerais</option>
+                    <option>Bahia</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Paraná</option>
+                    <option>Pernambuco</option>
+                    <option>Ceará</option>
+                    <option>Santa Catarina</option>
+                    <option>Goiás</option>
+                    <option>Distrito Federal</option>
+                </select>
+            </div>
+
+            <div class="col-12 col-md-2">
+                <label class="label-pequena">Bairro</label>
+                <select class="form-select form-select-sm input-filtro">
+                    <option value="" selected>Escolha</option>
+                    <option>Centro</option>
+                    <option>Jardim</option>
+                    <option>Moema</option>
+                    <option>Pinheiros</option>
+                    <option>Vila Mariana</option>
+                </select>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <label class="label-pequena">Data</label>
+                <input type="date" class="form-control form-control-sm input-filtro">
+            </div>
+
+            <div class="col-12 col-md-2 d-flex gap-3">
+                <button type="submit" class="btn-filtrar flex-fill btn-sm">Filtrar</button>
+                <button type="reset" class="btn-limpar flex-fill btn-sm">Limpar</button>
+            </div>
+
+        </div>
+    </form>
+</section>
 
     <section class="newsletter-section py-5">
         <div class="card text-dark border-0">

@@ -1,0 +1,54 @@
+
+@import url('style.css');
+
+/* Classes para labels */
+.label-pequena {
+    font-size: 14px;
+    color: var(--texto)
+}
+
+/* Classes para selects e inputs */
+.input-filtro {
+    font-size: 14px;
+    border: 1px solid var(--azul);
+    border-radius: 4px;
+    padding: 4px 8px;
+    height: calc(1.5em + 0.5rem + 2px);
+}
+
+/* Classes para botões */
+.btn-filtrar {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: var(--texto);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-filtrar:hover {
+    background-color: var(--cinza-escuro);
+}
+
+.btn-limpar {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: var(--cinza-claro);
+    color: var(--texto);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-limpar:hover {
+    background-color: #bbb;
+}
+
+@media (max-width: 791px) {
+    .btn-filtrar, .btn-limpar {
+        font-size: 12px;
+        padding: 4px 6px;
+        border-radius: 2px;
+    }
+}
