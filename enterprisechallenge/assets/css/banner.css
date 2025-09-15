@@ -1,0 +1,25 @@
+.header-blog h5 {
+    color: var(--texto);
+    font-family: var(--fonte-texto);
+}
+
+.header-blog p {
+    font-family: var(--fonte-texto);
+}
+
+.header-blog h1 {
+    font-family: var(--fonte-titulo);
+}
+
+.header-comunidade h5 {
+    font-family: var(--fonte-texto);
+}
+
+.header-comunidade p {
+    font-family: var(--fonte-texto);
+}
+
+.header-comunidade h1 {
+    color: var(--amarelo);
+    font-family: var(--fonte-titulo);
+}
